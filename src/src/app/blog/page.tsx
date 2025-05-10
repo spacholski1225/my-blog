@@ -1,17 +1,16 @@
-import BlogCard from "../components/blog/BlogCard";
+import BlogCard from "../../components/blog/BlogCard";
 
-export default function Home() {
+export default function BlogPage() {
   return (
     <div className="flex flex-col gap-8">
       <section className="mb-8">
-        <h1 className="text-4xl font-heading font-bold mb-6 text-text">Welcome to My Blog</h1>
+        <h1 className="text-4xl font-heading font-bold mb-6 text-text">Blog</h1>
         <p className="text-text opacity-90 text-lg">
-          A personal blog with Dark Neumorphism design, built with Next.js and Tailwind CSS.
+          All my blog posts in one place.
         </p>
       </section>
 
       <section>
-        <h2 className="text-2xl font-heading font-bold mb-6 text-text">Latest Posts</h2>
         <div className="grid gap-8">
           <BlogCard 
             title="hi from my blog"
