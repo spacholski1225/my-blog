@@ -9,31 +9,50 @@ interface BlogPostParams {
 export default function BlogPost({ params }: BlogPostParams) {
   const { slug } = params;
 
-  // For now, we only have one blog post
-  if (slug !== "hi-from-my-blog") {
+  // Mock data for our two blog posts
+  const blogPosts = {
+    "building-secure-dotnet-api": {
+      title: "Building a Secure .NET API",
+      date: "May 10, 2025",
+      content: [
+        "In this post, we'll explore how to build a secure API with .NET 8 using the latest security best practices.",
+        "Authentication and authorization are critical components of any modern API. We'll look at how to implement JWT authentication and role-based access control.",
+        "We'll also cover input validation, output encoding, and other security measures to protect against common vulnerabilities like SQL injection and XSS attacks."
+      ]
+    },
+    "smolai-agents-in-action": {
+      title: "SmolAI Agents in Action",
+      date: "May 3, 2025",
+      content: [
+        "Small, efficient AI agents are transforming development workflows and automating repetitive tasks.",
+        "In this post, we'll look at how to create and deploy SmolAI agents that can help with code generation, refactoring, and documentation.",
+        "We'll also explore how these agents can be integrated into your existing development pipeline to boost productivity and reduce errors."
+      ]
+    }
+  };
+
+  // Check if the slug exists in our mock data
+  if (!blogPosts[slug as keyof typeof blogPosts]) {
     notFound();
   }
 
+  const post = blogPosts[slug as keyof typeof blogPosts];
+
   return (
-    <article className="prose prose-invert max-w-none">
-      <div className="mb-8">
-        <h1 className="text-4xl font-heading font-bold mb-4 text-text">hi from my blog</h1>
-        <time className="text-sm text-text opacity-70">May 10, 2025</time>
+    <>
+      <div className="post">
+        <h2>{post.title}</h2>
+        <p className="date">Published: {post.date}</p>
+        {post.content.map((paragraph, index) => (
+          <p key={index} style={{marginBottom: '1rem'}}>{paragraph}</p>
+        ))}
       </div>
       
-      <div className="p-6 rounded-lg neumorphic-inset">
-        <p className="text-text mb-4">
-          Welcome to my personal blog with Dark Neumorphism design!
-        </p>
-        
-        <p className="text-text mb-4">
-          This is my first blog post. I'm excited to share my thoughts and ideas with you.
-        </p>
-        
-        <p className="text-text">
-          Stay tuned for more content coming soon!
-        </p>
+      <div style={{marginTop: '2rem', display: 'flex', justifyContent: 'flex-start'}}>
+        <a href="/blog" className="socials" style={{display: 'inline-block'}}>
+          Back to Blog
+        </a>
       </div>
-    </article>
+    </>
   );
 }

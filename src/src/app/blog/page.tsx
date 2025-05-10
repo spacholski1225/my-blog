@@ -1,25 +1,35 @@
-import BlogCard from "../../components/blog/BlogCard";
+import Link from 'next/link';
 
 export default function BlogPage() {
   return (
-    <div className="flex flex-col gap-8">
-      <section className="mb-8">
-        <h1 className="text-4xl font-heading font-bold mb-6 text-text">Blog</h1>
-        <p className="text-text opacity-90 text-lg">
-          All my blog posts in one place.
-        </p>
-      </section>
-
-      <section>
-        <div className="grid gap-8">
-          <BlogCard 
-            title="hi from my blog"
-            excerpt="This is my first blog post. Welcome to my personal blog with Dark Neumorphism design."
-            date="May 10, 2025"
-            slug="hi-from-my-blog"
-          />
+    <>
+      <Link href="/blog/building-secure-dotnet-api" style={{textDecoration: 'none', color: 'inherit', display: 'block'}}>
+        <div className="post">
+          <h2>Building a Secure .NET API</h2>
+          <p className="date">Published: May 10, 2025</p>
+          <p>Learn how to build a secure API with .NET 8 using the latest security best practices and authentication methods.</p>
+          <div className="read-more">
+            Read more
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 5L21 12M21 12L14 19M21 12H3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </div>
         </div>
-      </section>
-    </div>
+      </Link>
+      
+      <Link href="/blog/smolai-agents-in-action" style={{textDecoration: 'none', color: 'inherit', display: 'block'}}>
+        <div className="post">
+          <h2>SmolAI Agents in Action</h2>
+          <p className="date">Published: May 3, 2025</p>
+          <p>Exploring how small, efficient AI agents can transform your development workflow and automate repetitive tasks.</p>
+          <div className="read-more">
+            Read more
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 5L21 12M21 12L14 19M21 12H3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </Link>
+    </>
   );
 }
