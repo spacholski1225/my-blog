@@ -7,8 +7,8 @@ interface CategoryPageParams {
   };
 }
 
-export default function CategoryPage({ params }: CategoryPageParams) {
-  const { category } = params;
+export default async function CategoryPage({ params }: CategoryPageParams) {
+  const { category } = await params;
 
   // For now, we only support the "general" category
   if (category !== "general") {

@@ -6,8 +6,8 @@ interface BlogPostParams {
   };
 }
 
-export default function BlogPost({ params }: BlogPostParams) {
-  const { slug } = params;
+export default async function BlogPost({ params }: BlogPostParams) {
+  const { slug } = await params;
 
   // Mock data for our two blog posts
   const blogPosts = {
