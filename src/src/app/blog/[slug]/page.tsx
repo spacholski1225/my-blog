@@ -1,4 +1,6 @@
 import { notFound } from "next/navigation";
+import Link from 'next/link';
+import { getPostBySlug, markdownToHtml, getAllPosts } from '@/lib/api';
 
 interface BlogPostParams {
   params: {
@@ -6,53 +8,70 @@ interface BlogPostParams {
   };
 }
 
+// Generate static paths for all posts
+export async function generateStaticParams() {
+  const posts = getAllPosts();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
 export default async function BlogPost({ params }: BlogPostParams) {
-  const { slug } = await params;
+  // Fix the warning about params.slug needing to be awaited
+  const { slug } = params;
+  console.log(`Rendering blog post for slug: ${slug}`);
+  
+  try {
+    const post = getPostBySlug(slug);
+    console.log(`Post found:`, post ? 'Yes' : 'No');
 
-  // Mock data for our two blog posts
-  const blogPosts = {
-    "building-secure-dotnet-api": {
-      title: "Building a Secure .NET API",
-      date: "May 10, 2025",
-      content: [
-        "In this post, we'll explore how to build a secure API with .NET 8 using the latest security best practices.",
-        "Authentication and authorization are critical components of any modern API. We'll look at how to implement JWT authentication and role-based access control.",
-        "We'll also cover input validation, output encoding, and other security measures to protect against common vulnerabilities like SQL injection and XSS attacks."
-      ]
-    },
-    "smolai-agents-in-action": {
-      title: "SmolAI Agents in Action",
-      date: "May 3, 2025",
-      content: [
-        "Small, efficient AI agents are transforming development workflows and automating repetitive tasks.",
-        "In this post, we'll look at how to create and deploy SmolAI agents that can help with code generation, refactoring, and documentation.",
-        "We'll also explore how these agents can be integrated into your existing development pipeline to boost productivity and reduce errors."
-      ]
+    if (!post) {
+      console.log(`Post not found for slug: ${slug}`);
+      return (
+        <div className="error-container">
+          <h2>Post Not Found</h2>
+          <p>Sorry, the post you're looking for could not be found.</p>
+          <p>Slug: {slug}</p>
+          <div style={{marginTop: '2rem'}}>
+            <Link href="/blog" className="socials">
+              Back to Blog
+            </Link>
+          </div>
+        </div>
+      );
     }
-  };
 
-  // Check if the slug exists in our mock data
-  if (!blogPosts[slug as keyof typeof blogPosts]) {
-    notFound();
+    console.log(`Converting markdown to HTML for post: ${post.title}`);
+    const content = await markdownToHtml(post.content);
+
+    return (
+      <>
+        <div className="post">
+          <h2>{post.title}</h2>
+          <p className="date">Published: {post.date}</p>
+          <div dangerouslySetInnerHTML={{ __html: content }} />
+        </div>
+        
+        <div style={{marginTop: '2rem', display: 'flex', justifyContent: 'flex-start'}}>
+          <Link href="/blog" className="socials" style={{display: 'inline-block'}}>
+            Back to Blog
+          </Link>
+        </div>
+      </>
+    );
+  } catch (error) {
+    console.error(`Error rendering blog post:`, error);
+    return (
+      <div className="error-container">
+        <h2>Error Loading Post</h2>
+        <p>Sorry, there was an error loading this post.</p>
+        <p>Slug: {slug}</p>
+        <div style={{marginTop: '2rem'}}>
+          <Link href="/blog" className="socials">
+            Back to Blog
+          </Link>
+        </div>
+      </div>
+    );
   }
-
-  const post = blogPosts[slug as keyof typeof blogPosts];
-
-  return (
-    <>
-      <div className="post">
-        <h2>{post.title}</h2>
-        <p className="date">Published: {post.date}</p>
-        {post.content.map((paragraph, index) => (
-          <p key={index} style={{marginBottom: '1rem'}}>{paragraph}</p>
-        ))}
-      </div>
-      
-      <div style={{marginTop: '2rem', display: 'flex', justifyContent: 'flex-start'}}>
-        <a href="/blog" className="socials" style={{display: 'inline-block'}}>
-          Back to Blog
-        </a>
-      </div>
-    </>
-  );
 }
