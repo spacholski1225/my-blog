@@ -5,7 +5,9 @@ import Link from 'next/link';
 const Header = () => {
   return (
     <header>
-      <div className="logo">yourname.dev</div>
+      <Link href="/" style={{ textDecoration: 'none' }}>
+        <div className="logo">yourname.dev</div>
+      </Link>
       <nav>
         <Link href="/blog">Blog</Link>
         <Link href="/about">About</Link>
