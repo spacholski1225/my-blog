@@ -3,7 +3,8 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
-// Remove the prism import as it's causing issues
+import { rehype } from 'rehype';
+import rehypePrism from 'rehype-prism-plus'; // Modern syntax highlighting
 
 // Try multiple possible paths for the content directory
 function findContentDirectory() {
@@ -131,12 +132,17 @@ export function getAllPosts(): Post[] {
 export async function markdownToHtml(markdown: string) {
   try {
     console.log('Converting markdown to HTML...');
-    const result = await remark()
+    // First convert markdown to HTML
+    const remarkResult = await remark()
       .use(html, { sanitize: false })
-      // Removed prism plugin as it was causing issues
       .process(markdown);
     
-    return result.toString();
+    // Then process the HTML with rehype to add syntax highlighting
+    const rehypeResult = await rehype()
+      .use(rehypePrism, { showLineNumbers: true })
+      .process(remarkResult.toString());
+    
+    return rehypeResult.toString();
   } catch (error) {
     console.error('Error converting markdown to HTML:', error);
     // Return a basic HTML version of the markdown in case of error
