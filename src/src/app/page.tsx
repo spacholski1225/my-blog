@@ -1,11 +1,13 @@
 import Link from 'next/link';
 import { getAllPosts } from '@/lib/api';
+import AboutMe from '@/components/layout/AboutMe';
 
 export default function Home() {
   const posts = getAllPosts();
 
   return (
     <>
+      <AboutMe />
       {posts.length > 0 ? (
         posts.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`} style={{textDecoration: 'none', color: 'inherit', display: 'block'}}>

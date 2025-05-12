@@ -164,3 +164,116 @@ nav a:hover::after {
   transform: translateY(1px);
   box-shadow: 2px 2px 4px #0a0a0a, -2px -2px 4px #1a1a1a;
 }
+
+/* About Me section styling */
+.about-me {
+  background: linear-gradient(145deg, #181818, #222222);
+  border-radius: 1rem; /* rounded-2xl */
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.2); /* shadow-lg */
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+  border: 1px solid #2a2a2a;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-me-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .about-me-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.avatar-container {
+  flex-shrink: 0;
+}
+
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 112px;
+  height: 112px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 3px solid var(--accent-primary);
+}
+
+.bio-container {
+  flex: 1;
+}
+
+.bio-container h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--accent-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.bio-container p {
+  margin-bottom: 1.25rem;
+  opacity: 0.9;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .social-links {
+    justify-content: center;
+  }
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  min-width: 120px;
+  justify-content: center;
+}
+
+.social-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  color: white;
+}
+
+.social-button.github:hover {
+  background: #24292e;
+}
+
+.social-button.linkedin:hover {
+  background: #0a66c2;
+}
+
+.social-button.twitter:hover {
+  background: #1da1f2;
+}
+
+.social-button svg {
+  width: 20px;
+  height: 20px;
+}
