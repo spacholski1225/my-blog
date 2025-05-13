@@ -265,6 +265,336 @@ nav a:hover::after {
   background: #24292e;
 }
 
+/* Portfolio Page Styles */
+.portfolio-hero {
+  background: linear-gradient(145deg, #181818, #222222);
+  border-radius: 1rem;
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+  border: 1px solid #2a2a2a;
+}
+
+.portfolio-hero-content {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .portfolio-hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.portfolio-avatar {
+  object-fit: cover;
+  width: 225px;
+  height: 300px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 3px solid var(--accent-primary);
+  border-radius: 8px;
+}
+
+.portfolio-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.5rem;
+  color: var(--accent-secondary);
+  margin-bottom: 1rem;
+}
+
+.portfolio-bio {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+  line-height: 1.7;
+}
+
+.portfolio-section {
+  background: linear-gradient(145deg, #181818, #222222);
+  border-radius: 1rem;
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+  border: 1px solid #2a2a2a;
+}
+
+.section-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  color: var(--accent-secondary);
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  bottom: -8px;
+  left: 0;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 3px;
+}
+
+/* Skills Section Styles */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.skill-category {
+  margin-bottom: 1.5rem;
+}
+
+.category-title {
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--accent-primary);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.skill-item {
+  margin-bottom: 0.5rem;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+}
+
+.skill-name {
+  font-weight: 500;
+}
+
+.skill-level {
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+.skill-bar-bg {
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 4px;
+  transition: width 1s ease-in-out;
+}
+
+/* Projects Section Styles */
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-card {
+  background: var(--surface);
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 6px 6px 12px #0a0a0a, -6px -6px 12px #1a1a1a;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .project-card {
+    flex-direction: row;
+  }
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 8px 8px 16px #090909, -8px -8px 16px #1b1b1b;
+}
+
+.project-content {
+  flex: 2;
+}
+
+.project-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-screenshot {
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid #2a2a2a;
+  max-width: 100%;
+  height: auto;
+}
+
+.project-title {
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--accent-secondary);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.project-description {
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.project-motivation {
+  margin-bottom: 1rem;
+}
+
+.project-motivation h4, .project-tech h4 {
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--accent-primary);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tech-badge {
+  background: rgba(108, 99, 255, 0.2);
+  color: var(--accent-primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--background);
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.project-link.repo:hover {
+  background: #24292e;
+  color: white;
+}
+
+.project-link.demo:hover {
+  background: var(--accent-secondary);
+  color: white;
+}
+
+/* Education Section Styles */
+.education-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.subsection-title {
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--accent-primary);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.education-timeline, .certifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.education-card, .certification-card {
+  background: var(--surface);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 4px 4px 8px #0a0a0a, -4px -4px 8px #1a1a1a;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.education-card:hover, .certification-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 6px 6px 12px #090909, -6px -6px 12px #1b1b1b;
+}
+
+.education-period, .certification-date {
+  font-size: 0.9rem;
+  color: var(--accent-secondary);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.education-degree, .certification-name {
+  font-family: 'Space Grotesk', sans-serif;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.education-institution, .certification-issuer {
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+}
+
+.education-description {
+  opacity: 0.7;
+  font-size: 0.95rem;
+}
+
+.certification-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--accent-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.certification-link:hover {
+  text-decoration: underline;
+}
+
+/* Email button style */
+.social-button.email:hover {
+  background: #2196F3;
+}
 .social-button.linkedin:hover {
   background: #0a66c2;
 }
@@ -280,5 +610,44 @@ nav a:hover::after {
 .social-button svg {
   width: 20px;
   height: 20px;
+}
+/* Contact Section Styles */
+.contact-section {
+  animation-delay: 0.6s;
+}
+
+.contact-intro {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.contact-placeholder {
+  background: var(--surface);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  border: 1px solid #2a2a2a;
+}
+
+.placeholder-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  opacity: 0.8;
+}
+
+.contact-email {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--accent-primary);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-email:hover {
+  color: var(--accent-secondary);
+  text-decoration: underline;
 }
 
