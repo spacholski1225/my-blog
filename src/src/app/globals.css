@@ -120,6 +120,25 @@ nav a:hover::after {
   transform: translateX(4px);
 }
 
+/* Back to Blog link styling */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--accent-primary);
+  margin-top: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.back-link svg {
+  margin-right: 0.25rem; /* Arrow on the left side */
+  transition: transform 0.3s ease;
+}
+
+.back-link:hover svg {
+  transform: translateX(-4px); /* Move left on hover */
+}
+
 .about {
   margin-top: 4rem;
   background: var(--surface);

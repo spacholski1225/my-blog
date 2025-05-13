@@ -33,7 +33,10 @@ export default async function BlogPost({ params }: BlogPostParams) {
           <p>Sorry, the post you're looking for could not be found.</p>
           <p>Slug: {slug}</p>
           <div style={{marginTop: '2rem'}}>
-            <Link href="/blog" className="socials">
+            <Link href="/blog" className="back-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 19L3 12M3 12L10 5M3 12H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
               Back to Blog
             </Link>
           </div>
@@ -52,8 +55,11 @@ export default async function BlogPost({ params }: BlogPostParams) {
           <div dangerouslySetInnerHTML={{ __html: content }} />
         </div>
         
-        <div style={{marginTop: '2rem', display: 'flex', justifyContent: 'flex-start'}}>
-          <Link href="/blog" className="socials" style={{display: 'inline-block'}}>
+        <div style={{marginTop: '2rem'}}>
+          <Link href="/blog" className="back-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 19L3 12M3 12L10 5M3 12H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
             Back to Blog
           </Link>
         </div>
@@ -67,7 +73,10 @@ export default async function BlogPost({ params }: BlogPostParams) {
         <p>Sorry, there was an error loading this post.</p>
         <p>Slug: {slug}</p>
         <div style={{marginTop: '2rem'}}>
-          <Link href="/blog" className="socials">
+          <Link href="/blog" className="back-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 19L3 12M3 12L10 5M3 12H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
             Back to Blog
           </Link>
         </div>

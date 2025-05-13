@@ -47,14 +47,51 @@ const Footer = () => {
               marginBottom: '1rem',
               color: '#eeeeee'
             }}>Quick Links</h3>
-            <ul style={{
-              listStyleType: 'disc',
-              paddingLeft: '1.5rem'
+            <div style={{
+              display: 'flex',
+              gap: '1rem',
+              flexWrap: 'wrap'
             }}>
-              <li><Link href="/" style={{color: '#eeeeee', opacity: 0.7, textDecoration: 'none'}}>Home</Link></li>
-              <li><Link href="/blog" style={{color: '#eeeeee', opacity: 0.7, textDecoration: 'none'}}>Blog</Link></li>
-              <li><Link href="/about" style={{color: '#eeeeee', opacity: 0.7, textDecoration: 'none'}}>About</Link></li>
-            </ul>
+              <Link href="/" style={{
+                color: '#eeeeee',
+                opacity: 0.7,
+                textDecoration: 'none',
+                display: 'flex',
+                alignItems: 'center'
+              }}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginRight: '0.5rem'}}>
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                Home
+              </Link>
+              <Link href="/blog" style={{
+                color: '#eeeeee',
+                opacity: 0.7,
+                textDecoration: 'none',
+                display: 'flex',
+                alignItems: 'center'
+              }}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginRight: '0.5rem'}}>
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+                Blog
+              </Link>
+              <Link href="/portfolio" style={{
+                color: '#eeeeee',
+                opacity: 0.7,
+                textDecoration: 'none',
+                display: 'flex',
+                alignItems: 'center'
+              }}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginRight: '0.5rem'}}>
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                Portfolio
+              </Link>
+            </div>
           </div>
           
           {/* Connect */}
@@ -95,18 +132,6 @@ const Footer = () => {
                   <circle cx="4" cy="4" r="2"></circle>
                 </svg>
                 LinkedIn
-              </a>
-              <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" style={{
-                color: '#eeeeee',
-                opacity: 0.7,
-                textDecoration: 'none',
-                display: 'flex',
-                alignItems: 'center'
-              }}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{marginRight: '0.5rem'}}>
-                  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-1-4.8 4-7.6 7.5-4.5.8-.5 1.5-1 2.5-1.5z"></path>
-                </svg>
-                Twitter
               </a>
             </div>
           </div>
