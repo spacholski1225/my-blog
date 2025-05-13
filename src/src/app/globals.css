@@ -273,6 +273,10 @@ nav a:hover::after {
   background: #1da1f2;
 }
 
+.social-button.instagram:hover {
+  background: linear-gradient(45deg, #833AB4, #FD1D1D);
+}
+
 .social-button svg {
   width: 20px;
   height: 20px;
