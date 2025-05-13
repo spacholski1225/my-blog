@@ -232,6 +232,7 @@ nav a:hover::after {
 .social-links {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap; /* Add this to allow wrapping */
 }
 
 @media (max-width: 768px) {
@@ -251,8 +252,12 @@ nav a:hover::after {
   border-radius: 0.5rem;
   font-weight: 500;
   transition: all 0.3s ease;
-  min-width: 120px;
+  /* Remove min-width to accommodate longer text */
+  /* min-width: 120px; */
   justify-content: center;
+  /* Add these properties for text handling */
+  word-break: break-all;
+  overflow-wrap: break-word;
 }
 
 .social-button:hover {
@@ -311,6 +316,8 @@ nav a:hover::after {
   margin-bottom: 1.5rem;
   opacity: 0.9;
   line-height: 1.7;
+  word-wrap: break-word; /* Add this for better text wrapping */
+  overflow-wrap: break-word; /* Add this for better text wrapping */
 }
 
 .portfolio-section {
