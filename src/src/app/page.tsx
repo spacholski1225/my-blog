@@ -37,7 +37,7 @@ export default function Home() {
       <div className="view-all-container">
         <Link href="/blog">
           <button className="view-all-button">
-            View All Posts
+            Check Out All Posts
           </button>
         </Link>
       </div>
