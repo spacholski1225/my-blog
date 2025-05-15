@@ -14,13 +14,13 @@ const BlogCard = ({ title, excerpt, date, slug, thumbnail }: BlogCardProps) => {
     <Link href={`/blog/${slug}`} className="block">
       <article className="p-6 mb-8 bg-surface rounded-xl shadow-neumorphic-light hover:translate-y-[-4px] cursor-pointer transition-all duration-300 overflow-hidden">
         {/* Thumbnail image */}
-        <div className="mb-6">
+        <div className="mb-8 -mx-6 -mt-6">
           <BlogThumbnail
             src={thumbnail}
             alt={`Thumbnail for ${title}`}
             height={220}
             width={800}
-            className="mb-2"
+            className="rounded-t-xl"
           />
         </div>
         <div className="mb-4 relative">

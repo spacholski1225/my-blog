@@ -120,6 +120,32 @@ nav a:hover::after {
   transform: translateX(4px);
 }
 
+/* Blog thumbnail styling */
+.post-thumbnail {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Blog post thumbnail (larger version for individual blog posts) */
+.blog-post-thumbnail {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post-thumbnail img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 4px solid var(--accent-primary);
+}
+
 /* Back to Blog link styling */
 .back-link {
   display: inline-flex;

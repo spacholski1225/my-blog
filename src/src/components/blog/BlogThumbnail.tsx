@@ -12,8 +12,8 @@ interface BlogThumbnailProps {
 const BlogThumbnail = ({ 
   src, 
   alt, 
-  width = 800, 
-  height = 400, 
+  width = 1000,
+  height = 500,
   className = '',
   priority = false
 }: BlogThumbnailProps) => {
@@ -39,11 +39,11 @@ const BlogThumbnail = ({
         width={width}
         height={height}
         style={{
-          borderRadius: '8px',
           objectFit: 'cover',
-          width: `${width}px`,
-          height: `${height}px`,
-          border: '3px solid var(--accent-primary)',
+          width: className.includes('blog-post-thumbnail') ? '100%' : `${width}px`,
+          height: className.includes('blog-post-thumbnail') ? 'auto' : `${height}px`,
+          aspectRatio: className.includes('blog-post-thumbnail') ? `${width}/${height}` : undefined,
+          border: className.includes('blog-post-thumbnail') ? '4px solid var(--accent-primary)' : '2px solid var(--accent-primary)',
           boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)'
         }}
         loading={priority ? "eager" : "lazy"}

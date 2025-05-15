@@ -51,25 +51,24 @@ export default async function BlogPost({ params }: BlogPostParams) {
     return (
       <>
         <div className="post">
-          <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1.5rem', marginBottom: '2rem' }}>
-            {/* Thumbnail on the left */}
-            {post.thumbnail && (
-              <div style={{ flexShrink: 0 }}>
-                <BlogThumbnail
-                  src={post.thumbnail}
-                  alt={`Thumbnail for ${post.title}`}
-                  width={112}
-                  height={112}
-                  priority={true}
-                />
-              </div>
-            )}
-            
-            {/* Title and date on the right */}
-            <div>
-              <h2>{post.title}</h2>
-              <p className="date">Published: {post.date}</p>
+          {/* Large thumbnail at the top */}
+          {post.thumbnail && (
+            <div style={{ width: '100%', marginBottom: '2rem' }}>
+              <BlogThumbnail
+                src={post.thumbnail}
+                alt={`Thumbnail for ${post.title}`}
+                width={1000}
+                height={500}
+                priority={true}
+                className="blog-post-thumbnail"
+              />
             </div>
+          )}
+          
+          {/* Title and date below thumbnail */}
+          <div style={{ marginBottom: '2rem' }}>
+            <h2>{post.title}</h2>
+            <p className="date">Published: {post.date}</p>
           </div>
           
           {/* Content below */}
