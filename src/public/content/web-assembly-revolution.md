@@ -3,6 +3,7 @@ title: "The WebAssembly Revolution"
 date: "2025-04-25"
 slug: "web-assembly-revolution"
 excerpt: "Discover how WebAssembly is transforming web development by enabling high-performance applications that were previously impossible in browsers."
+thumbnail: "/images/default-thumbnail.png"
 ---
 
 # The WebAssembly Revolution

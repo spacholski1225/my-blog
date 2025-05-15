@@ -656,6 +656,33 @@ nav a:hover::after {
   border: 1px solid #2a2a2a;
 }
 
+/* View All Posts button styling */
+.view-all-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.view-all-button {
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 9999px; /* rounded-full */
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  min-width: 200px;
+}
+
+.view-all-button:hover {
+  background: linear-gradient(90deg, var(--accent-secondary), var(--accent-primary));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.2), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
 .placeholder-text {
   display: flex;
   flex-direction: column;

@@ -3,7 +3,7 @@ title: "Modern CSS Techniques for Better Web Design"
 date: "2025-04-15"
 slug: "modern-css-techniques"
 excerpt: "Explore the latest CSS techniques that can transform your web designs, including CSS Grid, Custom Properties, and Container Queries."
-thumbnail: "./modern-css-techniques-thumbnail.jpg"
+thumbnail: "/images/default-thumbnail.png"
 ---
 
 # Modern CSS Techniques for Better Web Design

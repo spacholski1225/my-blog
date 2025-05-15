@@ -4,12 +4,14 @@ import AboutMe from '@/components/layout/AboutMe';
 
 export default function Home() {
   const posts = getAllPosts();
+  // Limit to the 3 most recent posts
+  const recentPosts = posts.slice(0, 3);
 
   return (
     <>
       <AboutMe />
-      {posts.length > 0 ? (
-        posts.map((post) => (
+      {recentPosts.length > 0 ? (
+        recentPosts.map((post) => (
           <Link key={post.slug} href={`/blog/${post.slug}`} style={{textDecoration: 'none', color: 'inherit', display: 'block'}}>
             <div className="post">
               <h2>{post.title}</h2>
@@ -30,6 +32,15 @@ export default function Home() {
           <p>No markdown files were found in the content directory. Please add some markdown files to get started.</p>
         </div>
       )}
+      
+      {/* View All Posts button */}
+      <div className="view-all-container">
+        <Link href="/blog">
+          <button className="view-all-button">
+            View All Posts
+          </button>
+        </Link>
+      </div>
     </>
   );
 }

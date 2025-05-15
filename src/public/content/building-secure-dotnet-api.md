@@ -3,7 +3,7 @@ title: "Building a Secure .NET API"
 date: "2025-05-10"
 slug: "building-secure-dotnet-api"
 excerpt: "Learn how to build a secure API with .NET 8 using the latest security best practices and authentication methods."
-thumbnail: "./building-secure-dotnet-api-thumbnail.jpg"
+thumbnail: "/images/default-thumbnail.png"
 ---
 
 # Building a Secure .NET API
