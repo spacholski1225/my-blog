@@ -4,6 +4,7 @@ date: "2025-05-10"
 slug: "building-secure-dotnet-api"
 excerpt: "Learn how to build a secure API with .NET 8 using the latest security best practices and authentication methods."
 thumbnail: "/images/default-thumbnail.png"
+categories: ["Programming", "Tutorials", "AWS"]
 ---
 
 # Building a Secure .NET API

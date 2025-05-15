@@ -4,6 +4,7 @@ date: "2025-05-03"
 slug: "smolai-agents-in-action"
 excerpt: "Exploring how small, efficient AI agents can transform your development workflow and automate repetitive tasks."
 thumbnail: "/images/default-thumbnail.png"
+categories: ["AI/LLM", "Programming", "Tutorials"]
 ---
 
 # SmolAI Agents in Action

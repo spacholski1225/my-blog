@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import BlogThumbnail from './BlogThumbnail';
+import CategoryBadge from './CategoryBadge';
 
 interface BlogCardProps {
   title: string;
@@ -7,9 +8,10 @@ interface BlogCardProps {
   date: string;
   slug: string;
   thumbnail: string | null;
+  categories?: string[]; // New prop
 }
 
-const BlogCard = ({ title, excerpt, date, slug, thumbnail }: BlogCardProps) => {
+const BlogCard = ({ title, excerpt, date, slug, thumbnail, categories = [] }: BlogCardProps) => {
   return (
     <Link href={`/blog/${slug}`} className="block">
       <article className="p-6 mb-8 bg-surface rounded-xl shadow-neumorphic-light hover:translate-y-[-4px] cursor-pointer transition-all duration-300 overflow-hidden">
@@ -23,6 +25,20 @@ const BlogCard = ({ title, excerpt, date, slug, thumbnail }: BlogCardProps) => {
             className="rounded-t-xl"
           />
         </div>
+        
+        {/* Category badges */}
+        {categories.length > 0 && (
+          <div className="mb-4 flex flex-wrap gap-2">
+            {categories.map((category) => (
+              <CategoryBadge
+                key={category}
+                category={category}
+                size="small"
+              />
+            ))}
+          </div>
+        )}
+        
         <div className="mb-4 relative">
           <h2 className="text-2xl font-heading font-bold text-accent-secondary mb-2 transition-all duration-300">{title}</h2>
           <time className="text-sm text-gray-300 inline-block">{date}</time>

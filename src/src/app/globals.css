@@ -731,6 +731,55 @@ nav a:hover::after {
   box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.2), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
+/* Category Filters */
+.category-filter {
+  margin-bottom: 2rem;
+}
+
+.category-tag {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  background-color: var(--surface);
+  color: var(--text);
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.category-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-tag.active {
+  background-color: var(--accent-primary);
+  color: var(--surface);
+}
+
+/* Category Badges */
+.category-badge {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  background-color: var(--accent-primary);
+  color: var(--surface);
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.025em;
+  transition: all 0.2s ease;
+}
+
+.category-badge:hover {
+  background-color: var(--accent-secondary);
+  transform: translateY(-1px);
+}
+
+.category-badge-small {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.7rem;
+}
+
 .placeholder-text {
   display: flex;
   flex-direction: column;

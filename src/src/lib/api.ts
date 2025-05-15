@@ -37,6 +37,7 @@ export type Post = {
   excerpt: string;
   content: string;
   thumbnail: string | null; // Path to thumbnail image or null
+  categories: string[]; // Array of category names
 };
 
 // Check if a thumbnail exists for a post
@@ -128,6 +129,7 @@ export function getPostBySlug(slug: string): Post | null {
       excerpt: data.excerpt,
       content: content,
       thumbnail: thumbnail,
+      categories: data.categories || [], // Extract categories from frontmatter or default to empty array
     };
   } catch (error) {
     console.error(`Error getting post by slug ${slug}:`, error);
@@ -183,4 +185,34 @@ export async function markdownToHtml(markdown: string) {
       <pre>${markdown.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</pre>
     </div>`;
   }
+}
+
+// Get all unique categories with counts
+export function getCategories() {
+  const posts = getAllPosts();
+  const categoryCounts: Record<string, number> = {};
+  
+  posts.forEach(post => {
+    (post.categories || []).forEach(category => {
+      categoryCounts[category] = (categoryCounts[category] || 0) + 1;
+    });
+  });
+  
+  return Object.entries(categoryCounts).map(([name, count]) => ({
+    name,
+    slug: name.toLowerCase().replace(/\s+/g, '-'),
+    count
+  }));
+}
+
+// Get posts by category
+export function getPostsByCategory(categorySlug: string) {
+  const normalizedCategorySlug = categorySlug.toLowerCase();
+  const posts = getAllPosts();
+  
+  return posts.filter(post =>
+    (post.categories || []).some(category =>
+      category.toLowerCase().replace(/\s+/g, '-') === normalizedCategorySlug
+    )
+  );
 }

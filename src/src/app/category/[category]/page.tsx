@@ -1,5 +1,5 @@
-import { notFound } from "next/navigation";
-import BlogCard from "../../../components/blog/BlogCard";
+import { notFound, redirect } from "next/navigation";
+import { getCategories } from "@/lib/api";
 
 interface CategoryPageParams {
   params: {
@@ -7,35 +7,16 @@ interface CategoryPageParams {
   };
 }
 
-export default async function CategoryPage({ params }: CategoryPageParams) {
-  const { category } = await params;
-
-  // For now, we only support the "general" category
-  if (category !== "general") {
+export default function CategoryPage({ params }: CategoryPageParams) {
+  const { category } = params;
+  const categories = getCategories();
+  const categoryExists = categories.some(c => c.slug === category);
+  
+  if (!categoryExists) {
+    // Keep the notFound behavior for non-existent categories
     notFound();
   }
-
-  return (
-    <div className="flex flex-col gap-8">
-      <section className="mb-8">
-        <h1 className="text-4xl font-heading font-bold mb-6 text-text capitalize">
-          {category} Category
-        </h1>
-        <p className="text-text opacity-90 text-lg">
-          Blog posts in the {category} category.
-        </p>
-      </section>
-
-      <section>
-        <div className="grid gap-8">
-          <BlogCard 
-            title="hi from my blog"
-            excerpt="This is my first blog post. Welcome to my personal blog with Dark Neumorphism design."
-            date="May 10, 2025"
-            slug="hi-from-my-blog"
-          />
-        </div>
-      </section>
-    </div>
-  );
+  
+  // Redirect to the equivalent blog page with category filter
+  redirect(`/blog?category=${category}`);
 }

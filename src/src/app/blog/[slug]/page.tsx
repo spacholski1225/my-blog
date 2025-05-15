@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from 'next/link';
 import { getPostBySlug, markdownToHtml, getAllPosts } from '@/lib/api';
 import BlogThumbnail from '@/components/blog/BlogThumbnail';
+import CategoryBadge from '@/components/blog/CategoryBadge';
 
 interface BlogPostParams {
   params: {
@@ -68,6 +69,19 @@ export default async function BlogPost({ params }: BlogPostParams) {
           {/* Title and date below thumbnail */}
           <div style={{ marginBottom: '2rem' }}>
             <h2>{post.title}</h2>
+            
+            {/* Category badges */}
+            {post.categories && post.categories.length > 0 && (
+              <div className="mb-3 flex flex-wrap gap-2">
+                {post.categories.map((category) => (
+                  <CategoryBadge
+                    key={category}
+                    category={category}
+                  />
+                ))}
+              </div>
+            )}
+            
             <p className="date">Published: {post.date}</p>
           </div>
           
