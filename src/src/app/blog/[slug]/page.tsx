@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from 'next/link';
 import { getPostBySlug, markdownToHtml, getAllPosts } from '@/lib/api';
+import BlogThumbnail from '@/components/blog/BlogThumbnail';
 
 interface BlogPostParams {
   params: {
@@ -50,8 +51,28 @@ export default async function BlogPost({ params }: BlogPostParams) {
     return (
       <>
         <div className="post">
-          <h2>{post.title}</h2>
-          <p className="date">Published: {post.date}</p>
+          <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1.5rem', marginBottom: '2rem' }}>
+            {/* Thumbnail on the left */}
+            {post.thumbnail && (
+              <div style={{ flexShrink: 0 }}>
+                <BlogThumbnail
+                  src={post.thumbnail}
+                  alt={`Thumbnail for ${post.title}`}
+                  width={112}
+                  height={112}
+                  priority={true}
+                />
+              </div>
+            )}
+            
+            {/* Title and date on the right */}
+            <div>
+              <h2>{post.title}</h2>
+              <p className="date">Published: {post.date}</p>
+            </div>
+          </div>
+          
+          {/* Content below */}
           <div dangerouslySetInnerHTML={{ __html: content }} />
         </div>
         

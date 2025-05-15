@@ -36,7 +36,30 @@ export type Post = {
   date: string;
   excerpt: string;
   content: string;
+  thumbnail: string | null; // Path to thumbnail image or null
 };
+
+// Check if a thumbnail exists for a post
+function findThumbnailForPost(slug: string): string | null {
+  try {
+    // Check for common image extensions
+    const extensions = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
+    
+    // First check for {slug}-thumbnail.{ext}
+    for (const ext of extensions) {
+      const thumbnailPath = path.join(contentDirectory, `${slug}-thumbnail.${ext}`);
+      if (fs.existsSync(thumbnailPath)) {
+        // Return relative path for use in components
+        return `./${slug}-thumbnail.${ext}`;
+      }
+    }
+    
+    return null;
+  } catch (error) {
+    console.error(`Error finding thumbnail for ${slug}:`, error);
+    return null;
+  }
+}
 
 // Get all post slugs
 export function getPostSlugs() {
@@ -90,12 +113,21 @@ export function getPostBySlug(slug: string): Post | null {
     
     console.log(`Post data:`, data);
 
+    // Check for thumbnail in frontmatter or look for a matching file
+    let thumbnail = data.thumbnail || null;
+    
+    // If no thumbnail specified in frontmatter, look for a matching file
+    if (!thumbnail) {
+      thumbnail = findThumbnailForPost(realSlug);
+    }
+    
     return {
       slug: realSlug,
       title: data.title,
       date: data.date,
       excerpt: data.excerpt,
       content: content,
+      thumbnail: thumbnail,
     };
   } catch (error) {
     console.error(`Error getting post by slug ${slug}:`, error);
