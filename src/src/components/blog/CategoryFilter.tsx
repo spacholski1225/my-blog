@@ -14,11 +14,13 @@ interface CategoryFilterProps {
 
 export default function CategoryFilter({ categories, currentCategory }: CategoryFilterProps) {
   return (
-    <div className="category-filter mb-8">
-      <div className="flex flex-wrap gap-2">
+    <div className="portfolio-section category-filter-section">
+      <h2 className="section-title">Filter by Category</h2>
+      
+      <div className="filter-container">
         <Link
           href="/blog"
-          className={`category-tag ${!currentCategory ? 'active' : ''}`}
+          className={`filter-tag filter-tag-all ${!currentCategory ? 'active' : ''}`}
         >
           All
         </Link>
@@ -27,9 +29,10 @@ export default function CategoryFilter({ categories, currentCategory }: Category
           <Link
             key={category.slug}
             href={`/blog?category=${category.slug}`}
-            className={`category-tag ${currentCategory === category.slug ? 'active' : ''}`}
+            className={`filter-tag ${currentCategory === category.slug ? 'active' : ''}`}
           >
-            {category.name} ({category.count})
+            {category.name}
+            <span className="category-count">{category.count}</span>
           </Link>
         ))}
       </div>

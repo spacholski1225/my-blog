@@ -731,29 +731,65 @@ nav a:hover::after {
   box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.2), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
-/* Category Filters */
-.category-filter {
-  margin-bottom: 2rem;
+/* Category Filter Section */
+.category-filter-section {
+  animation-delay: 0.1s;
 }
 
-.category-tag {
-  display: inline-block;
-  padding: 0.5rem 1rem;
+.filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.filter-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1.25rem;
   border-radius: 9999px;
-  background-color: var(--surface);
+  background: var(--surface);
   color: var(--text);
-  font-size: 0.875rem;
-  transition: all 0.2s ease;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 4px 4px 8px #0a0a0a, -4px -4px 8px #1a1a1a;
 }
 
-.category-tag:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.filter-tag:hover {
+  transform: translateY(-3px);
+  box-shadow: 6px 6px 10px #090909, -6px -6px 10px #1b1b1b;
 }
 
-.category-tag.active {
-  background-color: var(--accent-primary);
-  color: var(--surface);
+.filter-tag.active {
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  color: white;
+}
+
+.category-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .filter-tag {
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .category-count {
+    width: 1.3rem;
+    height: 1.3rem;
+    font-size: 0.7rem;
+  }
 }
 
 /* Category Badges */
