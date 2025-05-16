@@ -20,6 +20,7 @@ export default async function BlogPost(props: any) {
   if (!slug) {
     return notFound();
   }
+  
   console.log(`Rendering blog post for slug: ${slug}`);
   
   try {

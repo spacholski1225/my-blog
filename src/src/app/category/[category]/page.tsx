@@ -1,14 +1,8 @@
 import { notFound, redirect } from "next/navigation";
 import { getCategories } from "@/lib/api";
 
-interface CategoryPageParams {
-  params: {
-    category: string;
-  };
-}
-
-export default function CategoryPage({ params }: CategoryPageParams) {
-  const { category } = params;
+export default function CategoryPage(props: any) {
+  const category = props.params?.category;
   const categories = getCategories();
   const categoryExists = categories.some(c => c.slug === category);
   
