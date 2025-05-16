@@ -517,6 +517,14 @@ nav a:hover::after {
   
   .project-links {
     justify-content: center;
+    gap: 0.75rem; /* Reduce gap between buttons on mobile */
+  }
+  
+  .project-link {
+    padding: 0.4rem 0.8rem; /* Smaller padding on mobile */
+    font-size: 0.9rem; /* Smaller font size on mobile */
+    min-width: 120px; /* Ensure minimum width for readability */
+    width: auto; /* Allow natural width */
   }
   
   .tech-stack {
@@ -592,6 +600,7 @@ nav a:hover::after {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
+  flex-wrap: wrap; /* Allow buttons to wrap on narrow screens */
 }
 
 .project-link {
@@ -624,6 +633,21 @@ nav a:hover::after {
   gap: 2rem;
 }
 
+/* Mobile responsiveness for education section */
+@media (max-width: 768px) {
+  .education-container {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    gap: 1.5rem;
+  }
+  
+  .education-card, .certification-card {
+    padding: 1.25rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+  }
+}
+
 .subsection-title {
   font-family: 'Space Grotesk', sans-serif;
   color: var(--accent-primary);
@@ -645,6 +669,8 @@ nav a:hover::after {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  word-wrap: break-word; /* Ensure text wraps properly */
+  overflow-wrap: break-word; /* Modern browsers */
 }
 
 .education-card:hover, .certification-card:hover {
