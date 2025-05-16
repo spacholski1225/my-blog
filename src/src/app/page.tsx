@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { getAllPosts } from '@/lib/api';
 import AboutMe from '@/components/layout/AboutMe';
 import BlogThumbnail from '@/components/blog/BlogThumbnail';
+import CategoryBadge from '@/components/blog/CategoryBadge';
 
 export default function Home() {
   const posts = getAllPosts();
@@ -30,6 +31,21 @@ export default function Home() {
                 {/* Content container */}
                 <div className="post-text-container">
                   <h2>{post.title}</h2>
+                  
+                  {/* Category badges */}
+                  {post.categories && post.categories.length > 0 && (
+                    <div className="mb-2 flex flex-wrap gap-1">
+                      {post.categories.map((category) => (
+                        <CategoryBadge
+                          key={category}
+                          category={category}
+                          size="small"
+                          insideLink={true}
+                        />
+                      ))}
+                    </div>
+                  )}
+                  
                   <p className="date">Published: {post.date}</p>
                   <p>{post.excerpt}</p>
                   <div className="read-more">
