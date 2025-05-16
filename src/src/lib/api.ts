@@ -30,8 +30,41 @@ function findContentDirectory() {
 
 const contentDirectory = findContentDirectory();
 
+// Recursively find all markdown files in a directory
+function findMarkdownFiles(dir: string, relativePath: string = ''): string[] {
+  let results: string[] = [];
+  
+  try {
+    const items = fs.readdirSync(dir);
+    
+    for (const item of items) {
+      const fullPath = path.join(dir, item);
+      const stat = fs.statSync(fullPath);
+      
+      if (stat.isDirectory()) {
+        // Recursively search subdirectory
+        const subDirPath = path.join(relativePath, item);
+        const subDirResults = findMarkdownFiles(fullPath, subDirPath);
+        results = results.concat(subDirResults);
+      } else if (stat.isFile() && item.endsWith('.md')) {
+        // Add markdown file to results
+        const relativeMdPath = relativePath ?
+          path.join(relativePath, item) :
+          item;
+        
+        results.push(relativeMdPath);
+      }
+    }
+  } catch (error) {
+    console.error(`Error reading directory ${dir}:`, error);
+  }
+  
+  return results;
+}
+
 export type Post = {
   slug: string;
+  fullPath: string; // Full path to the file (relative to contentDirectory)
   title: string;
   date: string;
   excerpt: string;
@@ -78,9 +111,9 @@ export function getPostSlugs() {
   }
   
   try {
-    const files = fs.readdirSync(contentDirectory);
-    const markdownFiles = files.filter(file => file.endsWith('.md'));
-    console.log(`Found ${markdownFiles.length} markdown files in ${contentDirectory}`);
+    // Use the recursive function to find all markdown files
+    const markdownFiles = findMarkdownFiles(contentDirectory);
+    console.log(`Found ${markdownFiles.length} markdown files in ${contentDirectory} (including subdirectories)`);
     return markdownFiles;
   } catch (error) {
     console.error(`Error reading content directory: ${error}`);
@@ -92,8 +125,40 @@ export function getPostSlugs() {
 export function getPostBySlug(slug: string): Post | null {
   try {
     console.log(`Getting post by slug: ${slug}`);
+    
+    // Remove .md extension if present
     const realSlug = slug.replace(/\.md$/, '');
-    const fullPath = path.join(contentDirectory, `${realSlug}.md`);
+    
+    // Handle both simple slugs and path-based slugs
+    let fullPath;
+    let fileSlug = realSlug;
+    
+    // Check if the slug contains directory separators
+    if (realSlug.includes('/') || realSlug.includes('\\')) {
+      // It's a path-based slug, use it directly
+      fullPath = path.join(contentDirectory, `${realSlug}.md`);
+    } else {
+      // It's a simple slug, look at the root level
+      fullPath = path.join(contentDirectory, `${realSlug}.md`);
+      
+      // If file doesn't exist at root level, try to find it in subdirectories
+      if (!fs.existsSync(fullPath)) {
+        console.log(`File not found at root level, searching in subdirectories...`);
+        const allFiles = findMarkdownFiles(contentDirectory);
+        
+        // Find a file that ends with the slug (could be in a subdirectory)
+        const matchingFile = allFiles.find(file => {
+          const fileName = path.basename(file, '.md');
+          return fileName === realSlug;
+        });
+        
+        if (matchingFile) {
+          fileSlug = matchingFile.replace(/\.md$/, '');
+          fullPath = path.join(contentDirectory, matchingFile);
+          console.log(`Found matching file in subdirectory: ${matchingFile}`);
+        }
+      }
+    }
     
     console.log(`Looking for file at path: ${fullPath}`);
     console.log(`File exists: ${fs.existsSync(fullPath)}`);
@@ -119,11 +184,15 @@ export function getPostBySlug(slug: string): Post | null {
     
     // If no thumbnail specified in frontmatter, look for a matching file
     if (!thumbnail) {
-      thumbnail = findThumbnailForPost(realSlug);
+      thumbnail = findThumbnailForPost(fileSlug);
     }
     
+    // Use the slug from frontmatter if available, otherwise extract from filename
+    const urlSlug = data.slug || path.basename(fileSlug);
+    
     return {
-      slug: realSlug,
+      slug: urlSlug,  // URL-friendly slug for routing
+      fullPath: fileSlug, // The full path for file access
       title: data.title,
       date: data.date,
       excerpt: data.excerpt,
