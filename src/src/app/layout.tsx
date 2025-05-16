@@ -4,6 +4,7 @@ import "./globals.css";
 import "./prism-theme.css";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
+import ScrollToTop from "../components/layout/ScrollToTop";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -36,6 +37,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );
