@@ -501,6 +501,29 @@ nav a:hover::after {
   }
 }
 
+/* Mobile responsiveness for project cards */
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  
+  .project-image {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .project-links {
+    justify-content: center;
+  }
+  
+  .tech-stack {
+    justify-content: center;
+  }
+}
+
 .project-card:hover {
   transform: translateY(-4px);
   box-shadow: 8px 8px 16px #090909, -8px -8px 16px #1b1b1b;
@@ -814,6 +837,46 @@ nav a:hover::after {
 .category-badge-small {
   padding: 0.25rem 0.5rem;
   font-size: 0.7rem;
+}
+
+/* Post content layout for responsive blog entries */
+.post-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.post-thumbnail-container {
+  flex-shrink: 0;
+}
+
+.post-text-container {
+  flex: 1;
+}
+
+/* Mobile responsiveness for blog entries */
+@media (max-width: 768px) {
+  .post-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .post-thumbnail-container {
+    margin-bottom: 1rem;
+  }
+  
+  /* Center "Read more" button on mobile */
+  .post .read-more {
+    justify-content: center;
+    width: 100%;
+  }
+  
+  /* Center category badges on mobile */
+  .post .mb-2.flex {
+    justify-content: center;
+  }
 }
 
 .placeholder-text {
