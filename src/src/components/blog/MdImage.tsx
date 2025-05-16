@@ -5,17 +5,25 @@ interface MdImageProps {
   alt: string;
   width?: number;
   height?: number;
+  postSlug?: string;
 }
 
-const MdImage = ({ src, alt, width = 800, height = 400 }: MdImageProps) => {
+const MdImage = ({ src, alt, width = 800, height = 400, postSlug }: MdImageProps) => {
   // Determine if the image path is relative to content directory
   const isRelativePath = src.startsWith('./') || (!src.startsWith('/') && !src.startsWith('http'));
   
   // Build the correct image path
   let imageSrc = src;
   if (isRelativePath) {
-    // For images within the content directory, we need to adjust the path
-    imageSrc = `/content/${src.replace('./', '')}`;
+    // Remove the leading './' if present
+    const cleanSrc = src.replace(/^\.\//g, '');
+    
+    // Construct path to the image using the post slug if available
+    if (postSlug) {
+      imageSrc = `/content/${postSlug}/${cleanSrc}`;
+    } else {
+      imageSrc = `/content/${cleanSrc}`;
+    }
   }
 
   console.log(`Rendering image with src: ${src}, adjusted to: ${imageSrc}`);

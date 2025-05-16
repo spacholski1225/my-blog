@@ -5,6 +5,8 @@ import { remark } from 'remark';
 import html from 'remark-html';
 import { rehype } from 'rehype';
 import rehypePrism from 'rehype-prism-plus'; // Modern syntax highlighting
+import { remarkImages } from '../../lib/remark-images';
+import { rehypeMdImage } from '../../lib/rehype-md-image';
 
 // Try multiple possible paths for the content directory
 function findContentDirectory() {
@@ -146,16 +148,24 @@ export function getPostBySlug(slug: string): Post | null {
         console.log(`File not found at root level, searching in subdirectories...`);
         const allFiles = findMarkdownFiles(contentDirectory);
         
-        // Find a file that ends with the slug (could be in a subdirectory)
-        const matchingFile = allFiles.find(file => {
-          const fileName = path.basename(file, '.md');
-          return fileName === realSlug;
-        });
-        
-        if (matchingFile) {
-          fileSlug = matchingFile.replace(/\.md$/, '');
-          fullPath = path.join(contentDirectory, matchingFile);
-          console.log(`Found matching file in subdirectory: ${matchingFile}`);
+        // First, check for a directory with the slug name containing an index.md file
+        const indexPath = path.join(contentDirectory, realSlug, 'index.md');
+        if (fs.existsSync(indexPath)) {
+          fileSlug = `${realSlug}/index`;
+          fullPath = indexPath;
+          console.log(`Found index.md in directory: ${realSlug}`);
+        } else {
+          // Otherwise, find a file that ends with the slug (could be in a subdirectory)
+          const matchingFile = allFiles.find(file => {
+            const fileName = path.basename(file, '.md');
+            return fileName === realSlug;
+          });
+          
+          if (matchingFile) {
+            fileSlug = matchingFile.replace(/\.md$/, '');
+            fullPath = path.join(contentDirectory, matchingFile);
+            console.log(`Found matching file in subdirectory: ${matchingFile}`);
+          }
         }
       }
     }
@@ -232,16 +242,22 @@ export function getAllPosts(): Post[] {
 }
 
 // Convert markdown to HTML
-export async function markdownToHtml(markdown: string) {
+export async function markdownToHtml(markdown: string, filePath: string = '') {
   try {
     console.log('Converting markdown to HTML...');
-    // First convert markdown to HTML
+    
+    // Get the directory path for relative image resolution
+    const postDir = filePath ? path.dirname(filePath) : '';
+    
+    // First convert markdown to HTML with our custom plugins
     const remarkResult = await remark()
+      .use(remarkImages, { relativePath: postDir })
       .use(html, { sanitize: false })
       .process(markdown);
     
-    // Then process the HTML with rehype to add syntax highlighting
+    // Then process the HTML with rehype to add syntax highlighting and handle images
     const rehypeResult = await rehype()
+      .use(rehypeMdImage)
       .use(rehypePrism, { showLineNumbers: true })
       .process(remarkResult.toString());
     

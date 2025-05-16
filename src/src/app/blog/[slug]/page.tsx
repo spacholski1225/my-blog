@@ -46,7 +46,8 @@ export default async function BlogPost(props: any) {
     }
 
     console.log(`Converting markdown to HTML for post: ${post.title}`);
-    const content = await markdownToHtml(post.content);
+    // Pass the file path to the markdownToHtml function
+    const content = await markdownToHtml(post.content, post.fullPath);
 
     return (
       <>
@@ -84,8 +85,11 @@ export default async function BlogPost(props: any) {
             <p className="date">Published: {post.date}</p>
           </div>
           
-          {/* Content below */}
-          <div dangerouslySetInnerHTML={{ __html: content }} />
+          {/* Content with custom components */}
+          <div
+            dangerouslySetInnerHTML={{ __html: content }}
+            suppressHydrationWarning
+          />
         </div>
         
         <div style={{marginTop: '2rem'}}>
