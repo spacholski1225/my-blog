@@ -18,7 +18,7 @@ const AboutMe = () => {
           <div className="bio-container">
             <h2>About Me</h2>
             <p>
-              Hello! I'm a passionate developer with experience in web development,
+              Hello! I&apos;m a passionate developer with experience in web development,
               particularly using React, Next.js, and TypeScript.
               I enjoy building modern, responsive web applications and exploring new technologies.
             </p>

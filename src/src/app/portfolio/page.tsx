@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import Hero from '@/components/portfolio/Hero';
 import Projects from '@/components/portfolio/Projects';
 import Education from '@/components/portfolio/Education';

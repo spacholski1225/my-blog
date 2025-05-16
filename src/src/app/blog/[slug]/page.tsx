@@ -1,4 +1,3 @@
-import { notFound } from "next/navigation";
 import Link from 'next/link';
 import { getPostBySlug, markdownToHtml, getAllPosts } from '@/lib/api';
 import BlogThumbnail from '@/components/blog/BlogThumbnail';
@@ -32,7 +31,7 @@ export default async function BlogPost({ params }: BlogPostParams) {
       return (
         <div className="error-container">
           <h2>Post Not Found</h2>
-          <p>Sorry, the post you're looking for could not be found.</p>
+          <p>Sorry, the post you&apos;re looking for could not be found.</p>
           <p>Slug: {slug}</p>
           <div style={{marginTop: '2rem'}}>
             <Link href="/blog" className="back-link">

@@ -24,7 +24,7 @@ const Contact = () => {
       
       <div className="contact-container">
         <p className="contact-intro">
-          Interested in working together or just want to say hi? Let's connect.
+          Interested in working together or just want to say hi? Let&apos;s connect.
         </p>
         
         <div className="contact-links-container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem', marginTop: '2rem' }}>

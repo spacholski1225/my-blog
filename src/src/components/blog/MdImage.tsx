@@ -22,7 +22,7 @@ const MdImage = ({ src, alt, width = 800, height = 400 }: MdImageProps) => {
 
   return (
     <div className="my-6">
-      <img
+      <Image
         src={imageSrc}
         alt={alt}
         width={width}

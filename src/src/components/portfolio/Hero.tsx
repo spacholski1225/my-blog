@@ -28,7 +28,7 @@ const Hero = () => {
         <div className="bio-container text-center md:text-left w-full">
           <h1 className="portfolio-title">My Portfolio</h1>
           <p className="portfolio-bio">
-            Hello! I'm a passionate developer with experience in web development,
+            Hello! I&apos;m a passionate developer with experience in web development,
             particularly using React, Next.js, and TypeScript.
             I enjoy building modern, responsive web applications and exploring new technologies.
             My expertise spans frontend, backend, and DevOps, allowing me to deliver complete solutions.

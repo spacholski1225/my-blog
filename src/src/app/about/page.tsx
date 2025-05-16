@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function About() {
   return (
@@ -8,10 +7,10 @@ export default function About() {
       
       <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-8">
         <p className="text-lg mb-4">
-          Hello! I'm a passionate developer with experience in web development, particularly using React, Next.js, and TypeScript.
+          Hello! I&apos;m a passionate developer with experience in web development, particularly using React, Next.js, and TypeScript.
         </p>
         <p className="text-lg mb-4">
-          I enjoy building modern, responsive web applications and exploring new technologies. When I'm not coding, you can find me hiking, reading, or experimenting with new recipes.
+          I enjoy building modern, responsive web applications and exploring new technologies. When I&apos;m not coding, you can find me hiking, reading, or experimenting with new recipes.
         </p>
         <p className="text-lg mb-4">
           Feel free to connect with me on social media or check out my projects on GitHub!

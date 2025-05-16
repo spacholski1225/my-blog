@@ -33,20 +33,19 @@ const BlogThumbnail = ({
 
   return (
     <div className={`blog-thumbnail ${className}`} style={{overflow: 'hidden'}}>
-      <img
+      <Image
         src={imageSrc}
         alt={alt}
         width={width}
         height={height}
+        priority={priority}
+        className={className.includes('blog-post-thumbnail') ? 'w-full h-auto' : ''}
         style={{
           objectFit: 'cover',
-          width: className.includes('blog-post-thumbnail') ? '100%' : `${width}px`,
-          height: className.includes('blog-post-thumbnail') ? 'auto' : `${height}px`,
           aspectRatio: className.includes('blog-post-thumbnail') ? `${width}/${height}` : undefined,
           border: className.includes('blog-post-thumbnail') ? '4px solid var(--accent-primary)' : '2px solid var(--accent-primary)',
           boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)'
         }}
-        loading={priority ? "eager" : "lazy"}
       />
     </div>
   );
