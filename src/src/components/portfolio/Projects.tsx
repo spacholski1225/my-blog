@@ -21,7 +21,7 @@ const projects: Project[] = [
     techStack: ["Next.js", "React", "TypeScript", "TailwindCSS", "Markdown"],
     repoUrl: "https://github.com/yourusername/blog",
     demoUrl: "https://yourblog.com",
-    image: "/images/blog-project.png"
+    image: "/images/default-thumbnail.png"
   },
   {
     title: "Task Management App",
@@ -30,7 +30,7 @@ const projects: Project[] = [
     techStack: ["React", "Node.js", "Express", "MongoDB", "JWT"],
     repoUrl: "https://github.com/yourusername/task-app",
     demoUrl: "https://yourtaskapp.com",
-    image: "/images/task-app.png"
+    image: "/images/default-thumbnail.png"
   },
   {
     title: "E-commerce Platform",
@@ -39,7 +39,7 @@ const projects: Project[] = [
     techStack: [".NET", "SQL Server", "React", "Redux", "Azure"],
     repoUrl: "https://github.com/yourusername/ecommerce",
     demoUrl: "https://yourecommerce.com",
-    image: "/images/ecommerce.png"
+    image: "/images/default-thumbnail.png"
   }
 ];
 
@@ -52,6 +52,12 @@ const TechBadge = ({ tech }: { tech: string }) => {
 };
 
 const ProjectCard = ({ project }: { project: Project }) => {
+  // Default image if src is null or doesn't exist
+  const defaultImage = '/images/default-thumbnail.png';
+  
+  // Process image path if available
+  const imageSrc = project.image || defaultImage;
+
   return (
     <div className="project-card">
       <div className="project-content">
@@ -98,17 +104,15 @@ const ProjectCard = ({ project }: { project: Project }) => {
         </div>
       </div>
       
-      {project.image && (
-        <div className="project-image">
-          <Image 
-            src={project.image} 
-            alt={`${project.title} screenshot`} 
-            width={300} 
-            height={200}
-            className="project-screenshot"
-          />
-        </div>
-      )}
+      <div className="project-image">
+        <Image
+          src={imageSrc}
+          alt={`${project.title} screenshot`}
+          width={300}
+          height={200}
+          className="project-screenshot"
+        />
+      </div>
     </div>
   );
 };
