@@ -70,7 +70,7 @@ const Contact = () => {
             </a>
             
             <a 
-              href="https://linkedin.com/in/yourprofile" 
+              href="https://linkedin.com/in/szymonpacholski" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="social-button linkedin"
