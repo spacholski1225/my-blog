@@ -1,10 +1,10 @@
 ---
 title: "Mutation Testing in .NET with Stryker"
-date: "2025-05-17"
+date: "2024-03-11"
 slug: "mutation-testing-dotnet"
 excerpt: "Learn how mutation testing helps evaluate the quality of your unit tests by injecting artificial bugs into your code. We’ll walk through a practical example using Stryker.NET."
-thumbnail: "/images/default-thumbnail.png"
-categories: ["Testing", ".NET", "Clean Code"]
+thumbnail: "/images/mutation-testing-dotnet-thumbnail.jpg"
+categories: [".NET"]
 ---
 
 Mutation testing is a technique that introduces artificial changes (mutants) into your code to verify whether your existing unit tests can detect them. These changes mimic common developer mistakes and help assess the effectiveness of your tests.

@@ -1,10 +1,10 @@
 ---
 title: "Deploying to AWS S3 with GitHub Actions"
-date: "2023-10-27"
+date: "2025-04-09"
 slug: "deploy-aws-s3-github-actions"
 excerpt: "Learn how to automate the deployment of your website to AWS S3 using GitHub Actions."
-thumbnail: "/images/default-thumbnail.png"
-categories: ["AWS", "GitHub Actions", "Deployment"]
+thumbnail: "/images/deploy-aws-s3-github-actions-thumbnail.jpg"
+categories: ["AWS", "CI/CD"]
 ---
 
 # Deploying to AWS S3 with GitHub Actions

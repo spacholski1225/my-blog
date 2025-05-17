@@ -1,10 +1,10 @@
 ---
 title: "Preventing Information Leakage in LLM Applications"
-date: "2025-05-17"
+date: "2025-01-03"
 slug: "preventing-information-leakage-llm-applications"
 excerpt: "Learn effective strategies to protect sensitive information in applications using large language models (LLMs)"
-thumbnail: "/images/default-thumbnail.png"
-categories: ["Security", "AI", "Data Privacy"]
+thumbnail: "/images/preventing-information-leakage-llm-applications-thumbnail.jpg"
+categories: ["AI/LLM", "Security"]
 ---
 
 # Preventing Information Leakage in LLM Applications

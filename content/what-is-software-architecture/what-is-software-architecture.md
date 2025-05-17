@@ -1,10 +1,10 @@
 ---
 title: "What is Software Architecture?"
-date: "2025-05-17"
+date: "2025-05-07"
 slug: "what-is-software-architecture"
 excerpt: "Understanding the high-level structure and design principles of software systems versus the detailed planning of individual components."
-thumbnail: "/images/default-thumbnail.png"
-categories: ["Software Development", "Architecture"]
+thumbnail: "/images/what-is-software-architecture-thumbnail.jpg"
+categories: ["Architecture"]
 ---
 
 # What is Software Architecture?

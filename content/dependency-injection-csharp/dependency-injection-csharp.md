@@ -1,10 +1,10 @@
 ---
 title: "Understanding Dependency Injection in C#"
-date: "2025-05-17"
+date: "2024-03-12"
 slug: "dependency-injection-csharp"
 excerpt: "Learn how Dependency Injection can improve your code structure, make your applications more testable, and increase flexibility. A practical overview with C# examples."
-thumbnail: "/images/default-thumbnail.png"
-categories: [".NET", "Architecture", "Clean Code"]
+thumbnail: "/images/dependency-injection-csharp-thumbnail.jpg"
+categories: ["Architecture", ".NET"]
 ---
 
 **Dependency Injection (DI)** is a core concept in object-oriented programming. It refers to a technique where dependencies are provided to a class from the outside—typically via a constructor—rather than the class creating them itself.

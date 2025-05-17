@@ -1,10 +1,10 @@
 ---
 title: "Automating GitHub to S3 Sync with AWS CodeBuild for Bedrock Indexing"
-date: "2024-05-18"
+date: "2025-04-16"
 slug: "github-s3-sync-aws-codebuild-bedrock"
 excerpt: "Learn how to automate the synchronization of a private GitHub repository to an S3 bucket for indexing with AWS Bedrock using AWS CodeBuild."
-thumbnail: "/images/default-thumbnail.png"
-categories: ["AWS", "Automation", "DevOps"]
+thumbnail: "/images/github-s3-sync-aws-codebuild-bedrock-thumbnail.jpg"
+categories: ["AWS", "CI/CD"]
 ---
 
 # Automating GitHub to S3 Sync with AWS CodeBuild for Bedrock Indexing

@@ -1,10 +1,10 @@
 ---
 title: "Understanding and Counting Tokens in LLM Models"
-date: "2025-05-17"
+date: "2025-01-22"
 slug: "counting-tokens-llm-models"
 excerpt: "Learn why token counting is crucial when working with LLMs and how to implement it in your applications"
-thumbnail: "/images/default-thumbnail.png"
-categories: ["AI", "Programming", "LLM"]
+thumbnail: "/images/counting-tokens-llm-models-thumbnail.jpg"
+categories: ["AI/LLM"]
 ---
 
 # Understanding and Counting Tokens in LLM Models

@@ -1,9 +1,9 @@
 ---
 title: "Prompt Engineering: What Every Developer Should Know"
-date: "2025-05-17"
+date: "2024-11-28"
 slug: "prompt-engineering-for-developers"
 excerpt: "Learn the key principles of prompt engineering and why mastering it is essential when working with large language models like GPT-4."
-thumbnail: "/images/default-thumbnail.png"
+thumbnail: "/images/prompt-engineering-for-developers-thumbnail.jpg"
 categories: ["AI/LLM"]
 ---
 

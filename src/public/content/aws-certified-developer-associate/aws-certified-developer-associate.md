@@ -1,10 +1,10 @@
 ---
 title: "My Journey to Becoming an AWS Certified Developer – Associate"
-date: "2024-MM-DD"
+date: "2025-03-06"
 slug: "aws-certified-developer-associate"
 excerpt: "My experience building a microservice on AWS and my journey to passing the AWS Certified Developer – Associate (DVA-C02) exam."
-thumbnail: "/images/default-thumbnail.png"
-categories: ["AWS", "Cloud", "Certification"]
+thumbnail: "/images/aws-certified-developer-associate-thumbnail.jpg"
+categories: ["AWS"]
 ---
 
 # My Journey to Becoming an AWS Certified Developer – Associate

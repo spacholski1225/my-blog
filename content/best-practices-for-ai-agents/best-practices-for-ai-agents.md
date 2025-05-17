@@ -1,10 +1,10 @@
 ---
 title: "Best Practices for Building AI Agents"
-date: "2025-05-17"
+date: "2025-01-14"
 slug: "best-practices-for-ai-agents"
 excerpt: "Key principles for creating efficient and reliable AI agents"
-thumbnail: "/images/default-thumbnail.png"
-categories: ["AI Development", "Best Practices"]
+thumbnail: "/images/best-practices-for-ai-agents-thumbnail.jpg"
+categories: ["AI/LLM"]
 ---
 
 # Best Practices for Building AI Agents

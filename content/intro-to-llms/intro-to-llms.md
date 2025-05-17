@@ -1,9 +1,9 @@
 ---
 title: "Introduction to LLMs: What Are They and How Do They Work?"
-date: "2025-05-17"
+date: "2024-11-20"
 slug: "intro-to-llms"
 excerpt: "A beginner-friendly explanation of Large Language Models (LLMs), how they work, and how they are used."
-thumbnail: "/images/default-thumbnail.png"
+thumbnail: "/images/intro-to-llms-thumbnail.jpg"
 categories: ["AI/LLM"]
 ---
 

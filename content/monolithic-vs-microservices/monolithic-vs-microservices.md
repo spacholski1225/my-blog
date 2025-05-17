@@ -1,10 +1,10 @@
 ---
 title: "Monolithic vs. Microservices Architecture"
-date: "2025-05-17"
+date: "2025-05-07"
 slug: "monolithic-vs-microservices"
 excerpt: "An overview of monolithic and microservices architectures, their characteristics, impact on deployment and scalability, and when to choose each."
-thumbnail: "/images/default-thumbnail.png"
-categories: ["Software Architecture", "Microservices", "Monolith"]
+thumbnail: "/images/monolithic-vs-microservices-thumbnail.jpg"
+categories: ["Architecture"]
 ---
 
 # Monolithic vs. Microservices Architecture

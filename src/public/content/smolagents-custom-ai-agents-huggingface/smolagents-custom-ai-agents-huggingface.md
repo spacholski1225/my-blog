@@ -1,10 +1,10 @@
 ---
 title: "SmolAgents: Building Custom AI Agents with Hugging Face"
-date: "2025-05-17"
+date: "2025-01-08"
 slug: "smolagents-custom-ai-agents-huggingface"
 excerpt: "Learn how to build powerful AI agents with Hugging Face's SmolAgents library and understand the differences between code-based and JSON-based agents."
-thumbnail: "/images/default-thumbnail.png"
-categories: ["AI", "Machine Learning", "Hugging Face"]
+thumbnail: "/images/smolagents-custom-ai-agents-huggingface-thumbnail.png"
+categories: ["AI/LLM"]
 ---
 
 # SmolAgents: Building Custom AI Agents with Hugging Face

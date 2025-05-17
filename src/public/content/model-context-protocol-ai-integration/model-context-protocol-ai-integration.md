@@ -1,10 +1,10 @@
 ---
 title: "How Model Context Protocol is a Game Changer in AI Integration"
-date: "2024-11-19"
+date: "2025-04-04"
 slug: "model-context-protocol-ai-integration"
 excerpt: "Discover how Anthropic's Model Context Protocol (MCP) standardizes communication and context sharing between AI models, revolutionizing AI integration."
-thumbnail: "/images/default-thumbnail.png"
-categories: ["Artificial Intelligence", "Integration"]
+thumbnail: "/images/model-context-protocol-ai-integration-thumbnail.jpg"
+categories: ["AI/LLM"]
 ---
 
 # How Model Context Protocol is a Game Changer in AI Integration

@@ -1,10 +1,10 @@
 ---
 title: "What is Clean Architecture?"
-date: "2025-05-17"
+date: "2025-03-28"
 slug: "what-is-clean-architecture"
 excerpt: "An explanation of Clean Architecture, its layers, principles, and benefits."
-thumbnail: "/images/default-thumbnail.png"
-categories: ["Software Architecture", "Design Patterns"]
+thumbnail: "/images/what-is-clean-architecture-thumbnail.jpg"
+categories: ["Architecture"]
 ---
 
 # What is Clean Architecture?

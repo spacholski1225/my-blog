@@ -1,10 +1,10 @@
 ---
 title: "Clean Code Principles: SOLID, KISS, YAGNI, and DRY"
-date: "2025-05-17"
+date: "2021-08-01"
 slug: "clean-code-principles"
 excerpt: "Explore essential principles for writing clean, maintainable code—SOLID, KISS, YAGNI, and DRY—and learn how they improve code quality and clarity."
-thumbnail: "/images/default-thumbnail.png"
-categories: ["Clean Code", "Best Practices", "Software Architecture"]
+thumbnail: "/images/clean-code-principles-thumbnail.jpg"
+categories: ["Programming"]
 ---
 
 Writing clean and maintainable code is one of the most important aspects of professional software development. Following a few proven principles can make your code easier to extend, debug, and understand.

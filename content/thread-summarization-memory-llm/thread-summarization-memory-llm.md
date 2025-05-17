@@ -1,10 +1,10 @@
 ---
 title: "Thread Summarization: Adding Memory to LLM Applications"
-date: "2025-05-17"
+date: "2025-12-21"
 slug: "thread-summarization-memory-llm"
 excerpt: "Learn how to implement memory in stateless LLM applications using Thread Summarization technique"
-thumbnail: "/images/thread-summarization.png"
-categories: ["LLM", "AI Development", "Programming"]
+thumbnail: "/images/thread-summarization-memory-llm-thumbnail.jpg"
+categories: ["AI/LLM", "Programming"]
 ---
 
 # Thread Summarization: Adding Memory to LLM Applications

@@ -1,10 +1,10 @@
 ---
 title: "Why and How to Use Fine-Tuning with OpenAI Models"
-date: "2025-05-17"
+date: "2024-12-18"
 slug: "fine-tuning-openai-guide"
-excerpt: "Learn when to use fine-tuning, how to prepare your data, and how to train a custom OpenAI model to improve performance and reduce prompt length"
-thumbnail: "/images/default-thumbnail.png"
-categories: ["AI", "OpenAI", "Machine Learning"]
+excerpt: "Learn when to use fine-tuning, how to prepare your data, and how to train a custom OpenAI model to improve performance and reduce prompt length."
+thumbnail: "/images/fine-tuning-openai-guide-thumbnail.jpg"
+categories: ["AI/LLM"]
 ---
 
 # Why and How to Use Fine-Tuning with OpenAI Models

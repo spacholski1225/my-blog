@@ -1,10 +1,10 @@
 ---
 title: "Introduction to RAG and Vector Search in NLP"
-date: "2025-05-17"
+date: "2025-03-17"
 slug: "rag-vs-vector-search"
 excerpt: "An overview of Retrieval Augmented Generation (RAG) and vector search in Natural Language Processing, discussing when to use each approach."
-thumbnail: "/images/default-thumbnail.png"
-categories: ["NLP", "Machine Learning"]
+thumbnail: "/images/rag-vs-vector-search-thumbnail.jpg"
+categories: ['AI/LLM']
 ---
 
 # Introduction to RAG and Vector Search in NLP

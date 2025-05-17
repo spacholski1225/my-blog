@@ -1,10 +1,10 @@
 ---
 title: "Hallucinations in AI Language Models: Causes and Solutions"
-date: "2025-05-17"
+date: "2025-02-04"
 slug: "hallucinations-in-ai-language-models"
 excerpt: "Exploring the phenomenon of AI hallucinations and effective strategies to minimize their occurrence in LLM applications."
-thumbnail: "/images/default-thumbnail.png"
-categories: ["Artificial Intelligence", "Technology"]
+thumbnail: "/images/hallucinations-in-ai-language-models-thumbnail.jpg"
+categories: ["AI/LLM"]
 ---
 
 # Hallucinations in AI Language Models: Causes and Solutions
