@@ -72,6 +72,21 @@ nav a:hover::after {
   width: 100%;
 }
 
+/* Mobile header responsiveness */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.2rem; /* Reduced from 1.5rem */
+  }
+  
+  nav a {
+    margin-left: 1rem; /* Reduced from 1.5rem */
+  }
+  
+  body {
+    padding: 1.5rem; /* Slightly reduced body padding on mobile */
+  }
+}
+
 .post {
   background: var(--surface);
   padding: 1.5rem 2rem;

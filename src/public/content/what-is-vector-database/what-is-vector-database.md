@@ -1,6 +1,6 @@
 ---
 title: "What is a Vector Database?"
-date: "2025-05-17"
+date: "2024-12-22"
 slug: "what-is-vector-database"
 excerpt: "An exploration of vector databases, embeddings, and their applications in AI and machine learning"
 thumbnail: "/images/what-is-vector-database-thumbnail.jpg"
