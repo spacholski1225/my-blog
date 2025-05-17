@@ -19,7 +19,7 @@ const projects: Project[] = [
     description: "A modern, responsive blog built with Next.js and TailwindCSS featuring dark mode, markdown support, and a clean design.",
     motivation: "I wanted to create a platform to share my technical knowledge and showcase my writing while experimenting with the latest web technologies.",
     techStack: ["Next.js", "React", "TypeScript", "TailwindCSS", "Markdown"],
-    repoUrl: "https://github.com/yourusername/blog",
+    repoUrl: "https://github.com/spacholski1225/blog",
     demoUrl: "https://yourblog.com",
     image: "/images/default-thumbnail.png"
   },
@@ -28,7 +28,7 @@ const projects: Project[] = [
     description: "A full-stack task management application with features like task categorization, due dates, priority levels, and user authentication.",
     motivation: "I built this to solve my own productivity challenges and to demonstrate my ability to create a complete application from frontend to backend.",
     techStack: ["React", "Node.js", "Express", "MongoDB", "JWT"],
-    repoUrl: "https://github.com/yourusername/task-app",
+    repoUrl: "https://github.com/spacholski1225/task-app",
     demoUrl: "https://yourtaskapp.com",
     image: "/images/default-thumbnail.png"
   },
@@ -37,7 +37,7 @@ const projects: Project[] = [
     description: "A scalable e-commerce solution with product catalog, shopping cart, payment processing, and order management.",
     motivation: "I wanted to challenge myself with a complex project that involves multiple integrations and real-world business logic.",
     techStack: [".NET", "SQL Server", "React", "Redux", "Azure"],
-    repoUrl: "https://github.com/yourusername/ecommerce",
+    repoUrl: "https://github.com/spacholski1225/ecommerce",
     demoUrl: "https://yourecommerce.com",
     image: "/images/default-thumbnail.png"
   }

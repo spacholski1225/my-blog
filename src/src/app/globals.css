@@ -722,10 +722,6 @@ nav a:hover::after {
   background: #0a66c2;
 }
 
-.social-button.twitter:hover {
-  background: #1da1f2;
-}
-
 .social-button.instagram:hover {
   background: linear-gradient(45deg, #833AB4, #FD1D1D);
 }

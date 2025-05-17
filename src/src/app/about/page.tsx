@@ -21,7 +21,7 @@ export default function About() {
       
       <div className="flex flex-wrap gap-4">
         <Link 
-          href="https://github.com/yourusername" 
+          href="https://github.com/spacholski1225" 
           target="_blank" 
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 px-4 py-2 rounded-md transition-colors"
@@ -33,7 +33,7 @@ export default function About() {
         </Link>
         
         <Link 
-          href="https://linkedin.com/in/yourusername" 
+          href="https://linkedin.com/in/szymonpacholski" 
           target="_blank" 
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 px-4 py-2 rounded-md transition-colors"
@@ -47,7 +47,7 @@ export default function About() {
         </Link>
         
         <Link 
-          href="https://instagram.com/yourusername" 
+          href="https://instagram.com/szymonpacholski.dev" 
           target="_blank" 
           rel="noopener noreferrer"
           className="flex items-center gap-2 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 px-4 py-2 rounded-md transition-colors"

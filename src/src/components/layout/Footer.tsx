@@ -107,7 +107,7 @@ const Footer = () => {
               gap: '1rem',
               flexWrap: 'wrap'
             }}>
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" style={{
+              <a href="https://github.com/spacholski1225" target="_blank" rel="noopener noreferrer" style={{
                 color: '#eeeeee',
                 opacity: 0.7,
                 textDecoration: 'none',
@@ -119,7 +119,7 @@ const Footer = () => {
                 </svg>
                 GitHub
               </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" style={{
+              <a href="https://linkedin.com/in/szymonpacholski" target="_blank" rel="noopener noreferrer" style={{
                 color: '#eeeeee',
                 opacity: 0.7,
                 textDecoration: 'none',
