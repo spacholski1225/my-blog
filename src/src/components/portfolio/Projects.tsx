@@ -11,35 +11,39 @@ interface Project {
   repoUrl?: string;
   demoUrl?: string;
   image?: string;
+  hideButtons?: boolean; // Flag to hide both repository and demo buttons
 }
 
 const projects: Project[] = [
   {
-    title: "Personal Blog",
-    description: "A modern, responsive blog built with Next.js and TailwindCSS featuring dark mode, markdown support, and a clean design.",
-    motivation: "I wanted to create a platform to share my technical knowledge and showcase my writing while experimenting with the latest web technologies.",
-    techStack: ["Next.js", "React", "TypeScript", "TailwindCSS", "Markdown"],
-    repoUrl: "https://github.com/spacholski1225/blog",
-    demoUrl: "https://yourblog.com",
-    image: "/images/default-thumbnail.png"
+    title: "An app that supports communication for people with autism",
+    description: "An advanced AI-based autism support app created in partnership with the non-profit Generado foundation. The app helps with communication and daily activities, offering interactive tools and mechanisms to develop social skills.",
+    motivation: "The aim of the project was to create a modern tool to support people with autism and their caregivers in everyday challenges. The project was carried out in cooperation with experts, enabling real support thanks to AI technology. The PoC (Proof of Concept) was positively evaluated by the foundation, which led to the development of the full version of the application.",
+    techStack: [".NET 8", "Razor Pages", "PostgreSQL", "Docker", "AWS", "OpenAI", "Llama", "LLM"],
+    repoUrl: "https://github.com/spacholski1225/text-grammar",
+    demoUrl: "",
+    image: "/images/autism-support-app.png",
+    hideButtons: true
   },
   {
-    title: "Task Management App",
-    description: "A full-stack task management application with features like task categorization, due dates, priority levels, and user authentication.",
-    motivation: "I built this to solve my own productivity challenges and to demonstrate my ability to create a complete application from frontend to backend.",
-    techStack: ["React", "Node.js", "Express", "MongoDB", "JWT"],
-    repoUrl: "https://github.com/spacholski1225/task-app",
-    demoUrl: "https://yourtaskapp.com",
-    image: "/images/default-thumbnail.png"
+    title: "AI-Powered Assistant: Centralizing Corporate Data from Confluence, JIRA, GitHub, and Bitbucket with AWS Bedrock",
+    description: "An internal RAG (Retrieval-Augmented Generation) system integrating documentation from Confluence, tasks from JIRA, and source code from GitHub and Bitbucket into AWS Bedrock. The solution uses Anthropic's Haiku model for semantic code descriptions and automated documentation.",
+    motivation: "The project aimed to streamline the process of retrieving technical information and code documentation by building a centralized RAG system. This enhanced internal knowledge sharing and reduced the time required to understand codebases and documentation.",
+    techStack: ["Python", "AWS Lambda", "SQS", "Confluence", "JIRA", "GitHub", "Bitbucket", "AWS Bedrock", "LLM"],
+    repoUrl: "",
+    demoUrl: "",
+    image: "/images/aws-bedrock-rag.png",
+    hideButtons: true
   },
   {
-    title: "E-commerce Platform",
-    description: "A scalable e-commerce solution with product catalog, shopping cart, payment processing, and order management.",
-    motivation: "I wanted to challenge myself with a complex project that involves multiple integrations and real-world business logic.",
-    techStack: [".NET", "SQL Server", "React", "Redux", "Azure"],
-    repoUrl: "https://github.com/spacholski1225/ecommerce",
-    demoUrl: "https://yourecommerce.com",
-    image: "/images/default-thumbnail.png"
+    title: "Microservice in .NET + Terraform Template on AWS + CI on TeamCity",
+    description: "A microservice extending the internal software ecosystem with real-time integration of client API data. The project included a Terraform template for AWS deployment, Docker-based containerization, and CI/CD automation with TeamCity.",
+    motivation: "The aim was to enhance the internal system with seamless API integration and automated infrastructure setup. The Terraform template is now used by multiple teams, accelerating deployment processes.",
+    techStack: [".NET 8", "Docker", "AWS", "Terraform", "TeamCity", "NewRelic", "PagerDuty"],
+    repoUrl: "",
+    demoUrl: "",
+    image: "/images/microservice-dotnet.png",
+    hideButtons: true
   }
 ];
 
@@ -82,7 +86,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
         </div>
         
         <div className="project-links">
-          {project.repoUrl && (
+          {!project.hideButtons && project.repoUrl && (
             <Link href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="project-link repo">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
@@ -91,7 +95,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
             </Link>
           )}
           
-          {project.demoUrl && (
+          {!project.hideButtons && project.demoUrl && (
             <Link href={project.demoUrl} target="_blank" rel="noopener noreferrer" className="project-link demo">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
