@@ -32,7 +32,14 @@ const BlogThumbnail = ({
   console.log('Processed imageSrc:', imageSrc);
 
   return (
-    <div className={`blog-thumbnail ${className}`} style={{overflow: 'hidden'}}>
+    <div
+      className={`blog-thumbnail ${className}`}
+      style={{
+        borderRadius: className.includes('blog-post-thumbnail') ? '12px' : '8px',
+        overflow: 'hidden',
+        display: 'inline-block'
+      }}
+    >
       <Image
         src={imageSrc}
         alt={alt}
@@ -44,7 +51,7 @@ const BlogThumbnail = ({
           objectFit: 'cover',
           aspectRatio: className.includes('blog-post-thumbnail') ? `${width}/${height}` : undefined,
           border: className.includes('blog-post-thumbnail') ? '4px solid var(--accent-primary)' : '2px solid var(--accent-primary)',
-          boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)'
+          display: 'block'
         }}
       />
     </div>

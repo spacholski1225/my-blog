@@ -92,13 +92,11 @@ nav a:hover::after {
   padding: 1.5rem 2rem;
   border-radius: 16px;
   margin: 1.5rem 0;
-  box-shadow: 6px 6px 12px #0a0a0a, -6px -6px 12px #1a1a1a;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .post:hover {
   transform: translateY(-4px);
-  box-shadow: 8px 8px 16px #090909, -8px -8px 16px #1b1b1b;
 }
 
 .post h2 {
@@ -140,7 +138,6 @@ nav a:hover::after {
   border-radius: 8px;
   overflow: hidden;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 /* Blog post thumbnail (larger version for individual blog posts) */
@@ -150,7 +147,6 @@ nav a:hover::after {
   margin-bottom: 2rem;
   overflow: hidden;
   transition: all 0.3s ease;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
 }
 
 .blog-post-thumbnail img {
@@ -998,6 +994,8 @@ nav a:hover::after {
 
 .post-thumbnail-container {
   flex-shrink: 0;
+  display: inline-block;
+  border-radius: 8px;
 }
 
 .post-text-container {
