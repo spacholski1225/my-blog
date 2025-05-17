@@ -18,9 +18,9 @@ const AboutMe = () => {
           <div className="bio-container">
             <h2>About Me</h2>
             <p>
-              Hello! I&apos;m a passionate developer with experience in web development,
-              particularly using React, Next.js, and TypeScript.
-              I enjoy building modern, responsive web applications and exploring new technologies.
+              Welcome to my digital corner!
+              I&apos;m Szymon, a developer exploring the realms of software engineering and artificial intelligence.
+              Dive into my blog and projects to see what I'm up to.
             </p>
           </div>
         </div>

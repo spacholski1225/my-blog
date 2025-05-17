@@ -29,13 +29,13 @@ const Footer = () => {
               color: '#6c63ff',
               marginBottom: '1rem',
               fontFamily: 'Space Grotesk, sans-serif'
-            }}>yourname.dev</h3>
+            }}>szymonpacholski.com</h3>
             <p style={{
               color: '#eeeeee',
               opacity: 0.7,
               marginBottom: '1rem'
             }}>
-              A personal blog about web development, programming, and technology.
+              My personal blog and portfolio focused on modern software development, AI applications and backend architecture.
             </p>
           </div>
           
@@ -146,7 +146,7 @@ const Footer = () => {
           opacity: 0.5,
           fontSize: '0.875rem'
         }}>
-          <p>© 2025 yourname.dev. All rights reserved.</p>
+          <p>© 2025 szymonpacholski.com. All rights reserved.</p>
         </div>
       </div>
     </footer>

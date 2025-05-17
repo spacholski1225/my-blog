@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header>
       <Link href="/" style={{ textDecoration: 'none' }}>
-        <div className="logo">yourname.dev</div>
+        <div className="logo">szymonpacholski.com</div>
       </Link>
       <nav>
         <Link href="/blog">Blog</Link>

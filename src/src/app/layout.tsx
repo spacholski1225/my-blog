@@ -19,8 +19,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Stylish Blog",
-  description: "A personal blog with Dark Neumorphism design",
+  title: "Szymon Pacholski Blog",
+  description: "The personal blog and portfolio of Szymon Pacholski, focused on modern software development, AI applications, and backend architecture.",
 };
 
 export default function RootLayout({
