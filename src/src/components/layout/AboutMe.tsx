@@ -20,7 +20,7 @@ const AboutMe = () => {
             <p>
               Welcome to my digital corner!
               I&apos;m Szymon, a developer exploring the realms of software engineering and artificial intelligence.
-              Dive into my blog and projects to see what I'm up to.
+              Dive into my blog and projects to see what I&apos;m up to.
             </p>
           </div>
         </div>

@@ -28,10 +28,10 @@ const Hero = () => {
         <div className="bio-container text-center md:text-left w-full">
           <h1 className="portfolio-title">My Portfolio</h1>
           <p className="portfolio-bio">
-            I'm Szymon, a solution-oriented software engineer with experience in building scalable backend systems. Passionate about AI and system architecture, I contribute to our internal AI Council and develop tools integrating AI with enterprise systems.
+            I&apos;m Szymon, a solution-oriented software engineer with experience in building scalable backend systems. Passionate about AI and system architecture, I contribute to our internal AI Council and develop tools integrating AI with enterprise systems.
           </p>
           <p className="portfolio-bio">
-            As a naturally curious and collaborative engineer, I thrive on understanding how systems work holistically and connecting with others. My career goals include advancing in AI integration, software architecture, and leadership. I'm committed to open knowledge sharing that benefits the entire tech community.
+            As a naturally curious and collaborative engineer, I thrive on understanding how systems work holistically and connecting with others. My career goals include advancing in AI integration, software architecture, and leadership. I&apos;m committed to open knowledge sharing that benefits the entire tech community.
           </p>
           <div className="social-links justify-center md:justify-start">
             <Link href="https://github.com/spacholski1225" target="_blank" rel="noopener noreferrer" className="social-button github">
