@@ -14,41 +14,38 @@ interface Certification {
   issuer: string;
   date: string;
   url?: string;
+  description?: string;
 }
 
 const educationHistory: EducationItem[] = [
   {
-    institution: "University of Technology",
+    institution: "University of Zielona Gora",
     degree: "Master's in Computer Science",
-    period: "2018 - 2020",
+    period: "2024 - 2025",
     description: "Specialized in Software Engineering with focus on distributed systems and cloud computing."
   },
   {
-    institution: "University of Technology",
-    degree: "Bachelor's in Computer Science",
-    period: "2014 - 2018",
-    description: "Foundations in programming, algorithms, data structures, and software development methodologies."
+    institution: "University of Zielona Gora",
+    degree: "Bachelor of Engineering in Automation Control and Robotics",
+    period: "2019 - 2023",
+    description: "Foundations in programming, algorithms, and software development, combined with core knowledge of control systems, automation technologies, and robotics."
   }
 ];
 
 const certifications: Certification[] = [
   {
-    name: "AWS Certified Solutions Architect",
+    name: "AWS Certified Associate Developer",
     issuer: "Amazon Web Services",
-    date: "2022",
-    url: "https://aws.amazon.com/certification/"
+    date: "2025",
+    url: "https://www.credly.com/badges/83e585cd-9443-476f-8d9a-e6b5601b18e1/linked_in_profile",
+    description: "Validates technical expertise in developing and maintaining applications on the AWS platform. Covers core AWS services, architecture best practices, and application development."
   },
   {
-    name: "Microsoft Certified: Azure Developer Associate",
-    issuer: "Microsoft",
-    date: "2021",
-    url: "https://learn.microsoft.com/en-us/certifications/"
-  },
-  {
-    name: "Professional Scrum Master I",
-    issuer: "Scrum.org",
-    date: "2020",
-    url: "https://www.scrum.org/professional-scrum-certifications"
+    name: "Ai_devs 3 Agents",
+    issuer: "AI_devs",
+    date: "2024",
+    url: "https://credsverse.com/credentials/de59643a-5116-4f59-9da3-4cbcf4308305",
+    description: "Validates skills in building, optimizing, and deploying agent-based AI systems. Covers working with language models, tool integration, and maintaining production-ready applications."
   }
 ];
 
@@ -72,11 +69,14 @@ const CertificationCard = ({ cert }: { cert: Certification }) => {
       <div className="certification-content">
         <h3 className="certification-name">{cert.name}</h3>
         <div className="certification-issuer">Issued by {cert.issuer}</div>
+        {cert.description && (
+          <p className="certification-description">{cert.description}</p>
+        )}
         {cert.url && (
-          <a 
-            href={cert.url} 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href={cert.url}
+            target="_blank"
+            rel="noopener noreferrer"
             className="certification-link"
           >
             Verify
