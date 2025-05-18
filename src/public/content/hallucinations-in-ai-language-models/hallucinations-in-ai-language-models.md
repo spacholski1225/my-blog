@@ -13,7 +13,7 @@ Hallucinations in ChatGPT, other chatbots, or simply LLM models are a natural oc
 
 ## When Are AI Hallucinations a Problem?
 
-In creative work, when a model generates additional content, hallucinations might even be desirable. However, when we use models to analyze medical research, interpret legal documents, or even for seemingly harmless tasks like creating social media content, the errors that may arise pose significant risks: **false medical advice or diagnoses**, **legal errors**, and spreading **misinformation**.
+In creative work, when a model generates additional content, hallucinations might even be desirable. However, when we use models to analyze medical research, interpret legal documents, or even for seemingly harmless tasks like creating social media content, the errors that may arise pose significant risks: **false medical advice or diagnoses**, **legal errors**and spreading **misinformation**.
 
 That's why when using these models, implementing mechanisms that limit the occurrence of hallucinations and increase system reliability is crucial.
 

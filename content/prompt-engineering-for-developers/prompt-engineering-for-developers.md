@@ -79,7 +79,7 @@ Tell the model what format you expect. For example:
 Return the output as a JSON list matching the schema below.
 ```
 ### 3. Define Rules
-Use numbered or bulleted lists to outline constraints, edge cases, and expected behaviors. Clearly state how the model should behave under normal and edge-case conditions.
+Use numbered or bulleted lists to outline constraints, edge casesand expected behaviors. Clearly state how the model should behave under normal and edge-case conditions.
 
 ### 4. Provide Data
 If the model needs context (e.g., a document or search results), wrap it in a section and refer to it explicitly:
@@ -129,4 +129,4 @@ In one case, a prompt worked perfectly unless the user input included a misleadi
 Solution: Strengthen the system prompt to override misleading user instructions.
 
 ## Conclusion
-When working with LLMs, writing good prompts is a critical skill—especially in software development. In production environments, prompts are often generated dynamically based on user input, business logic, and system state. Mastering prompt engineering helps ensure your AI applications are reliable, accurate, and cost-effective.
+When working with LLMs, writing good prompts is a critical skill—especially in software development. In production environments, prompts are often generated dynamically based on user input, business logicand system state. Mastering prompt engineering helps ensure your AI applications are reliable, accurateand cost-effective.

@@ -35,7 +35,7 @@ Although AWS Lambda works great in many scenarios, in this case, I encountered s
 
 AWS CodeBuild turned out to be a much better solution for several reasons:
 
-* **Ready-made environment with necessary tools** – CodeBuild includes Git, SSH, and other necessary development tools by default.
+* **Ready-made environment with necessary tools** – CodeBuild includes Git, SSHand other necessary development tools by default.
 * **Simple configuration** – only a few lines in the `buildspec.yml` file were enough to define the entire process.
 * **Easy integration with GitHub** – CodeBuild offers native integration with GitHub repositories.
 * **SSH authentication support** – it's easy to configure access to private repositories.

@@ -20,7 +20,7 @@ AI agents are systems that use language models as their engine, but their functi
 SmolAgents stands out for several key features:
 
 1. **Simplicity** – The agent logic fits in ~1000 lines of code, allowing you to focus exclusively on the most important elements.
-2. **Support for any LLM** – Agents can be powered by models from Hugging Face, OpenAI, Anthropic, and others.
+2. **Support for any LLM** – Agents can be powered by models from Hugging Face, OpenAI, Anthropicand others.
 3. **Code Agents** – Support for agents that generate Python code while performing tasks.
 4. **Integration with Hugging Face Hub** – You can share and load tools and other resources directly from the Hub community.
 

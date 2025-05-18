@@ -1,6 +1,6 @@
 # Next.js Blog & Portfolio
 
-A modern blog and portfolio website built with Next.js, featuring a markdown-based blog system, category filtering, syntax highlighting, and a professional portfolio section.
+A modern blog and portfolio website built with Next.js, featuring a markdown-based blog system, category filtering, syntax highlightingand a professional portfolio section.
 
 ## 📋 Table of Contents
 

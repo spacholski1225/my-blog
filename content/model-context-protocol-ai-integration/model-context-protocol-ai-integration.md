@@ -27,7 +27,7 @@ Imagine a typical interaction with an AI assistant. You ask, "What's the situati
 Context in AI is all the additional information that allows a model to understand what exactly the query is about. MCP provides a standard way to pass this context between different systems, which is fundamental to creating complex AI solutions composed of many specialized models.
 
 ## MCP Architecture – How Does it Work in Practice?
-At the heart of MCP is the MCP Server – a central component that manages the flow of information and context. It receives requests, directs them to the appropriate models, and manages the context of the entire interaction.
+At the heart of MCP is the MCP Server – a central component that manages the flow of information and context. It receives requests, directs them to the appropriate modelsand manages the context of the entire interaction.
 
 A typical data flow in MCP looks like this:
 
@@ -88,4 +88,4 @@ In the near future, we can expect an ecosystem of MCP-compatible solutions, wher
 Perhaps the biggest change that MCP will bring is the democratization of AI – a standard protocol will make it easier for smaller companies and independent developers to create complex AI solutions without having to reinvent the wheel every time.
 
 ## Summary
-The Model Context Protocol is not just another abstraction layer in the AI technology stack – it's a fundamental shift in how we think about the integration of artificial intelligence systems. By standardizing the way not only data but, above all, context is exchanged, MCP paves the way for more complex, flexible, and powerful AI systems.
+The Model Context Protocol is not just another abstraction layer in the AI technology stack – it's a fundamental shift in how we think about the integration of artificial intelligence systems. By standardizing the way not only data but, above all, context is exchanged, MCP paves the way for more complex, flexibleand powerful AI systems.

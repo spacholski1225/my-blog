@@ -17,7 +17,7 @@ By default, AutoMapper maps properties with matching names (e.g., `FirstName` to
 
 ## Installing AutoMapper
 
-Installing AutoMapper is simple. Open **NuGet Package Manager**, search for **AutoMapper**, and install the package.
+Installing AutoMapper is simple. Open **NuGet Package Manager**, search for **AutoMapper**and install the package.
 
 ---
 
@@ -41,7 +41,7 @@ public class AutoMapperConfig
 ```
 
 ## Creating the Model and DTO
-Let's assume we have a User class that contains the following data: First Name, Last Name, City, and Address.
+Let's assume we have a User class that contains the following data: First Name, Last Name, Cityand Address.
 
 We also have a UserDto class that includes only the First Name and Last Name.
 
@@ -74,7 +74,7 @@ public class AutoMapperConfig
 We also added a MapUserToUserDto method to simplify usage.
 
 ## Creating the Model and DTO
-Let’s assume we have a User class that contains the following data: First Name, Last Name, City, and Address.
+Let’s assume we have a User class that contains the following data: First Name, Last Name, Cityand Address.
 
 We also have a UserDto class that includes only the First Name and Last Name.
 
@@ -128,7 +128,7 @@ static void Main(string[] args)
 ```
 
 ## Custom Mapping (Different Property Names)
-Now suppose we rename FirstName in UserDto to Name. This will cause AutoMapper to fail silently, and the Name property will be null.
+Now suppose we rename FirstName in UserDto to Name. This will cause AutoMapper to fail silentlyand the Name property will be null.
 
 To fix this, we need to modify the configuration:
 

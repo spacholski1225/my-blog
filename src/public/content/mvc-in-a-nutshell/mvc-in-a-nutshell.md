@@ -2,7 +2,7 @@
 title: "MVC in a Nutshell"
 date: "2021-03-21"
 slug: "mvc-in-a-nutshell"
-excerpt: "A brief introduction to the MVC architectural pattern and how its components—Model, View, and Controller—work together."
+excerpt: "A brief introduction to the MVC architectural pattern and how its components—Model, Viewand Controller—work together."
 thumbnail: "/images/mvc.png"
 categories: ["Architecture"]
 ---
@@ -11,7 +11,7 @@ categories: ["Architecture"]
 
 The MVC pattern (Model-View-Controller) is one of the most popular architectural patterns, which means it defines the structure of how an application is organized.
 
-In simple terms, it divides an application into three main components: the model, the view, and the controller. These components work together to handle the overall system functionality.
+In simple terms, it divides an application into three main components: the model, the viewand the controller. These components work together to handle the overall system functionality.
 
 ![MVC Image](/images/mvc.png)
 

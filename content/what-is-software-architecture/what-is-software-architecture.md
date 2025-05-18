@@ -17,7 +17,7 @@ In the world of software, architecture is the "big picture" of the system. It's 
 * How these components will communicate with each other
 * What technology will be used
 * How scalable the system will be
-* How to ensure security, performance, and reliability
+* How to ensure security, performanceand reliability
 
 Software architecture is usually created at the beginning of a project and is rarely changed, because any modifications at this level can have a huge impact on the entire system.
 

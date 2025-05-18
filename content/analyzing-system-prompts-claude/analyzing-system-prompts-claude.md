@@ -17,7 +17,7 @@ Understanding how the system prompts of existing models work is crucial because 
 
 * Reveals how precise and structured instructions must be to achieve predictable results.
 * Shows techniques for defining behaviors, including ethical and safety guidelines.
-* Illustrates the importance of context, examples, and tool usage in shaping AI responses.
+* Illustrates the importance of context, examplesand tool usage in shaping AI responses.
 * Provides practical knowledge about prompt engineering that can be applied when working with various AI models.
 
 ## Key Elements and Conclusions from Claude's System Prompt
@@ -29,7 +29,7 @@ Analyzing Claude's system prompt reveals several key elements and strategies use
 The foundation of an effective prompt is its detail and organization.
 
 * **Precision:** Claude's prompt avoids generalities, defining behaviors in many scenarios, including rules for using tools and interpreting results. Ambiguities are eliminated.
-* **Structure:** The use of sections, headings, lists, and XML tags (e.g., `<citation_instructions>`, `<search_instructions>`) helps the model process complex directives. Good organization is key.
+* **Structure:** The use of sections, headings, listsand XML tags (e.g., `<citation_instructions>`, `<search_instructions>`) helps the model process complex directives. Good organization is key.
 * **Result Formatting:** The prompt specifies the required format of responses, such as Markdown, LaTeX formulas, or specific citation formats (`<antml:cite>`), as well as the creation of artifacts with specific MIME types.
 
 ### Defining Desired and Undesired Behaviors
@@ -37,13 +37,13 @@ The foundation of an effective prompt is its detail and organization.
 Clear guidelines on what the model should do and what it should avoid are essential.
 
 * **Strong Directives:** The use of keywords like MUST, ALWAYS, NEVER, DO NOT (e.g., "NEVER reproduces any copyrighted material...") leaves no room for interpretation.
-* **Safety and Ethics:** This is a priority. Rules are defined regarding avoiding harmful, copyrighted, and illegal content, as well as limitations (e.g., not providing medical advice without disclaimers). Sections like `<harmful_content_safety>` and `<mandatory_copyright_requirements>` address this.
+* **Safety and Ethics:** This is a priority. Rules are defined regarding avoiding harmful, copyrightedand illegal content, as well as limitations (e.g., not providing medical advice without disclaimers). Sections like `<harmful_content_safety>` and `<mandatory_copyright_requirements>` address this.
 
 ### Learning Through Examples and Providing Context
 
 The model is provided with specific patterns and frameworks for action.
 
-* **Examples:** Sections like `<search_examples>` contain question-answer pairs illustrating expected behavior, tool usage, and reliance on internal knowledge.
+* **Examples:** Sections like `<search_examples>` contain question-answer pairs illustrating expected behavior, tool usageand reliance on internal knowledge.
 * **Context and Role:** Defining the role ("You are Claude, created by Anthropic"), the knowledge cut-off date, or information about current events places the model's actions within a specific framework and influences the style of responses.
 
 ### Integration with Tools and Complexity Management
@@ -63,4 +63,4 @@ Instructions can account for dynamic changes and reinforce the most important ru
 
 ## Summary
 
-In conclusion, the analysis of Claude's system prompt shows that effective prompt engineering relies on precision, structure, clear guidelines, examples, context, safety considerations, and thoughtful handling of tools and uncertainty.
+In conclusion, the analysis of Claude's system prompt shows that effective prompt engineering relies on precision, structure, clear guidelines, examples, context, safety considerationsand thoughtful handling of tools and uncertainty.

@@ -2,7 +2,7 @@
 title: "What is a Vector Database?"
 date: "2024-12-22"
 slug: "what-is-vector-database"
-excerpt: "An exploration of vector databases, embeddings, and their applications in AI and machine learning"
+excerpt: "An exploration of vector databases, embeddingsand their applications in AI and machine learning"
 thumbnail: "/images/what-is-vector-database-thumbnail.jpg"
 categories: ["AI/LLM"]
 ---
@@ -31,7 +31,7 @@ Let's imagine a set of data stored in a vector database. Let's visualize them in
 ![Chart Image](/images/chart.png)
 *Source: weaviate.io*
 
-We can see that dog, cat, and wolf are positioned close to each other. Wolves and dogs are placed close together because dogs are close descendants of wolves. Similarly, cats and dogs are fairly classic pets.
+We can see that dog, catand wolf are positioned close to each other. Wolves and dogs are placed close together because dogs are close descendants of wolves. Similarly, cats and dogs are fairly classic pets.
 
 On the other side, we have apple and banana. These are fruits, so they lie close to each other and on the opposite side, as they are not associated with animals in any way.
 

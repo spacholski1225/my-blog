@@ -1,13 +1,13 @@
 ---
-title: "Clean Code Principles: SOLID, KISS, YAGNI, and DRY"
+title: "Clean Code Principles: SOLID, KISS, YAGNIand DRY"
 date: "2021-08-01"
 slug: "clean-code-principles"
-excerpt: "Explore essential principles for writing clean, maintainable code—SOLID, KISS, YAGNI, and DRY—and learn how they improve code quality and clarity."
+excerpt: "Explore essential principles for writing clean, maintainable code—SOLID, KISS, YAGNIand DRY—and learn how they improve code quality and clarity."
 thumbnail: "/images/clean-code-principles-thumbnail.jpg"
 categories: ["Programming"]
 ---
 
-Writing clean and maintainable code is one of the most important aspects of professional software development. Following a few proven principles can make your code easier to extend, debug, and understand.
+Writing clean and maintainable code is one of the most important aspects of professional software development. Following a few proven principles can make your code easier to extend, debugand understand.
 
 Let’s begin with the **SOLID** principles—five object-oriented programming principles introduced by Robert C. Martin (Uncle Bob), a well-known author in the field of software engineering.
 
@@ -59,7 +59,7 @@ Let’s begin with the **SOLID** principles—five object-oriented programming p
 
 ### KISS – Keep It Simple, Stupid
 
-This principle emphasizes writing code as simply as possible. Avoid unnecessary complexity. Simple code is easier to read, debug, and extend—not only for you but also for your teammates in the future.
+This principle emphasizes writing code as simply as possible. Avoid unnecessary complexity. Simple code is easier to read, debugand extend—not only for you but also for your teammates in the future.
 
 ---
 
@@ -77,4 +77,4 @@ Avoid duplication in your code. Repeating logic or code blocks across classes ma
 
 ## Conclusion
 
-Clean code is more than just readable syntax—it's about making thoughtful design decisions that improve the longevity and maintainability of your software. By applying principles like **SOLID**, **KISS**, **YAGNI**, and **DRY**, you make your codebase more professional, scalable, and easier to work with.
+Clean code is more than just readable syntax—it's about making thoughtful design decisions that improve the longevity and maintainability of your software. By applying principles like **SOLID**, **KISS**, **YAGNI**and **DRY**, you make your codebase more professional, scalableand easier to work with.

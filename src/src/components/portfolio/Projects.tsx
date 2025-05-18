@@ -26,8 +26,8 @@ const projects: Project[] = [
     hideButtons: true
   },
   {
-    title: "AI-Powered Assistant: Centralizing Corporate Data from Confluence, JIRA, GitHub, and Bitbucket with AWS Bedrock",
-    description: "An internal RAG (Retrieval-Augmented Generation) system integrating documentation from Confluence, tasks from JIRA, and source code from GitHub and Bitbucket into AWS Bedrock. The solution uses Anthropic's Haiku model for semantic code descriptions and automated documentation.",
+    title: "AI-Powered Assistant: Centralizing Corporate Data from Confluence, JIRA, GitHuband Bitbucket with AWS Bedrock",
+    description: "An internal RAG (Retrieval-Augmented Generation) system integrating documentation from Confluence, tasks from JIRAand source code from GitHub and Bitbucket into AWS Bedrock. The solution uses Anthropic's Haiku model for semantic code descriptions and automated documentation.",
     motivation: "The project aimed to streamline the process of retrieving technical information and code documentation by building a centralized RAG system. This enhanced internal knowledge sharing and reduced the time required to understand codebases and documentation.",
     techStack: ["Python", "AWS Lambda", "SQS", "Confluence", "JIRA", "GitHub", "Bitbucket", "AWS Bedrock", "LLM"],
     repoUrl: "",
@@ -37,7 +37,7 @@ const projects: Project[] = [
   },
   {
     title: "Microservice in .NET + Terraform Template on AWS + CI on TeamCity",
-    description: "A microservice extending the internal software ecosystem with real-time integration of client API data. The project included a Terraform template for AWS deployment, Docker-based containerization, and CI/CD automation with TeamCity.",
+    description: "A microservice extending the internal software ecosystem with real-time integration of client API data. The project included a Terraform template for AWS deployment, Docker-based containerizationand CI/CD automation with TeamCity.",
     motivation: "The aim was to enhance the internal system with seamless API integration and automated infrastructure setup. The Terraform template is now used by multiple teams, accelerating deployment processes.",
     techStack: [".NET 8", "Docker", "AWS", "Terraform", "TeamCity", "NewRelic", "PagerDuty"],
     repoUrl: "",

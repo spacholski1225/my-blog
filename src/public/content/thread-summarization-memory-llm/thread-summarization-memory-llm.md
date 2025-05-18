@@ -13,7 +13,7 @@ When creating applications that use Large Language Models (LLMs), it's natural t
 
 ## Statelessness of LLM Models
 
-An important characteristic to consider when designing applications using LLMs is their statelessness. This means that models don't remember previous interactions with the user. Each query is processed independently, and the conversation context must be passed in its entirety with each subsequent query. In other words, the model doesn't know what was said before.
+An important characteristic to consider when designing applications using LLMs is their statelessness. This means that models don't remember previous interactions with the user. Each query is processed independentlyand the conversation context must be passed in its entirety with each subsequent query. In other words, the model doesn't know what was said before.
 
 This statelessness stems from the design principles behind LLM architecture. Although these models can analyze long input texts and generate coherent responses, they don't have a long-term memory mechanism built in.
 

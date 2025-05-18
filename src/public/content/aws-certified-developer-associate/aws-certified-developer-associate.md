@@ -11,7 +11,7 @@ categories: ["AWS"]
 
 Almost a year ago, I started working on a project that allowed me to practically step into the world of the cloud. My task was to create a microservice from scratch based on AWS services. Despite my previous experience, it turned out to be a challenge that quickly showed me how much more I needed to learn.
 
-After completing the project, I wanted to continue exploring the AWS cloud, and that's why I set a goal to obtain the AWS Certified Developer – Associate (DVA-C02) certification. Long story short, I managed to pass it with a score of 820/1000.
+After completing the project, I wanted to continue exploring the AWS cloudand that's why I set a goal to obtain the AWS Certified Developer – Associate (DVA-C02) certification. Long story short, I managed to pass it with a score of 820/1000.
 
 ## Project – Challenges and Lessons Learned
 

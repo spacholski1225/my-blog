@@ -7,7 +7,7 @@ export default function About() {
       
       <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-8">
         <p className="text-lg mb-4">
-          Hello! I&apos;m a passionate developer with experience in web development, particularly using React, Next.js, and TypeScript.
+          Hello! I&apos;m a passionate developer with experience in web development, particularly using React, Next.jsand TypeScript.
         </p>
         <p className="text-lg mb-4">
           I enjoy building modern, responsive web applications and exploring new technologies. When I&apos;m not coding, you can find me hiking, reading, or experimenting with new recipes.

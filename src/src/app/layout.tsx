@@ -20,7 +20,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: "Szymon Pacholski Site",
-  description: "The personal blog and portfolio of Szymon Pacholski, focused on modern software development, AI applications, and backend architecture.",
+  description: "The personal blog and portfolio of Szymon Pacholski, focused on modern software development, AI applicationsand backend architecture.",
   icons: {
     icon: '/logo.png',
   },

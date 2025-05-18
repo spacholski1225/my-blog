@@ -2,7 +2,7 @@
 title: "LLMs in IT: Beyond Code Generation"
 date: "2025-02-18"
 slug: "llms-in-it-beyond-code-generation"
-excerpt: "How large language models are transforming IT operations, documentation, and system analysis"
+excerpt: "How large language models are transforming IT operations, documentationand system analysis"
 thumbnail: "/images/llms-in-it-beyond-code-generation-thumbnail.jpg"
 categories: ["AI/LLM"]
 ---
@@ -33,5 +33,5 @@ In customer service and IT support, we increasingly encounter chatbots based on 
 
 Another area where LLMs find application is data analysis. System log analysis and report generation become increasingly complicated with the growth of data volume, but LLMs provide excellent support in this activity. LLMs can help with:
 
-* **Processing large datasets** – analyzing logs, identifying anomalies, and suggesting potential solutions.
+* **Processing large datasets** – analyzing logs, identifying anomaliesand suggesting potential solutions.
 * **Generating reports** – based on collected data, which are useful for system administrators and security managers.

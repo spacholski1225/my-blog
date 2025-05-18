@@ -23,7 +23,7 @@ The RAG mechanism is based on two main components:
 * **Generation module:** Based on the collected data, it generates a response, combining knowledge from the search with its own language model capabilities.
 
 ### Examples of RAG applications
-* **Q\&A Systems:** The user asks a complex question, and the system searches for information in documents and generates a coherent answer.
+* **Q\&A Systems:** The user asks a complex questionand the system searches for information in documents and generates a coherent answer.
 * **Chatbots:** Using RAG allows chatbots to provide more accurate and contextual responses.
 * **Contextual search engines:** By combining information retrieval with response generation, you can obtain a tool that not only finds documents but also interprets their content.
 
@@ -52,9 +52,9 @@ RAG is particularly useful when queries are complex and require:
 ## When is vector search sufficient?
 
 ### Scenarios for simpler applications
-* **Speed of operation:** When the most important criterion is response time, and the queries are relatively simple.
+* **Speed of operation:** When the most important criterion is response timeand the queries are relatively simple.
 * **Low computational requirements:** An ideal solution for applications or systems operating on limited resources.
-* **Less complex tasks:** When it is not necessary to generate new content, and it is sufficient to indicate the most similar documents or text fragments.
+* **Less complex tasks:** When it is not necessary to generate new contentand it is sufficient to indicate the most similar documents or text fragments.
 
 ## Comparison of both approaches
 
@@ -76,6 +76,6 @@ RAG is particularly useful when queries are complex and require:
 * Contextual limitations
 
 ## Summary
-Choose RAG when your queries are complex, require additional context and precise answers, and hardware resources are not a limitation.
+Choose RAG when your queries are complex, require additional context and precise answersand hardware resources are not a limitation.
 
-Opt for lighter vector search when speed of operation, simplicity of implementation, and lower computational demand are crucial, and the queries are relatively simple.
+Opt for lighter vector search when speed of operation, simplicity of implementationand lower computational demand are crucialand the queries are relatively simple.

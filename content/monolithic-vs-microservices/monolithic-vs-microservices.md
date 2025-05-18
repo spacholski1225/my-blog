@@ -2,7 +2,7 @@
 title: "Monolithic vs. Microservices Architecture"
 date: "2025-05-07"
 slug: "monolithic-vs-microservices"
-excerpt: "An overview of monolithic and microservices architectures, their characteristics, impact on deployment and scalability, and when to choose each."
+excerpt: "An overview of monolithic and microservices architectures, their characteristics, impact on deployment and scalabilityand when to choose each."
 thumbnail: "/images/monolithic-vs-microservices-thumbnail.jpg"
 categories: ["Architecture"]
 ---
@@ -22,7 +22,7 @@ A monolith is a traditional approach where the entire application runs as a sing
 
 ## What is a Microservices Architecture?
 
-Microservices break down an application into a collection of small, independent services that communicate with each other via APIs. Each microservice is responsible for a specific business functionality and can be developed, deployed, and scaled independently.
+Microservices break down an application into a collection of small, independent services that communicate with each other via APIs. Each microservice is responsible for a specific business functionality and can be developed, deployedand scaled independently.
 
 **Key features:**
 
@@ -35,7 +35,7 @@ Microservices break down an application into a collection of small, independent 
 
 ### Monolith
 
-* **Initial ease:** Deploying a monolith is initially simple – you run one process, and you're done.
+* **Initial ease:** Deploying a monolith is initially simple – you run one processand you're done.
 * **Growing complexity:** Over time, deployments become riskier – one change can affect the entire system.
 * **Longer build times:** As the application grows, the build and testing process lengthens.
 
@@ -77,7 +77,7 @@ Microservices break down an application into a collection of small, independent 
 
 ## E-commerce System Example
 
-Imagine an e-commerce system with features like a product catalog, shopping cart, payments, and order management.
+Imagine an e-commerce system with features like a product catalog, shopping cart, paymentsand order management.
 
 **Monolithic Approach:**
 All functions run within a single application. When Black Friday causes a sudden surge in traffic, the entire system must be scaled, even though the shopping cart and payment functionalities are mainly overloaded. Introducing a new payment method requires deploying the entire system, increasing risk.
@@ -94,7 +94,7 @@ However, new challenges arise in microservices:
 ## When to Choose a Monolith?
 
 * When you are starting a new project and are unsure about the requirements.
-* When development speed is critical, and the team is small.
+* When development speed is criticaland the team is small.
 * When you don't have experience with distributed systems.
 * When the project scale is not very large.
 
@@ -111,4 +111,4 @@ The choice between a monolith and microservices is not black and white. Many com
 
 Remember that microservices are not an end in themselves but a solution to specific problems. If you don't have these problems, a monolith might be a simpler and more effective solution.
 
-The most important thing is to understand the trade-offs associated with each approach and choose the one that best suits your business needs, team capabilities, and development plans.
+The most important thing is to understand the trade-offs associated with each approach and choose the one that best suits your business needs, team capabilitiesand development plans.

@@ -13,7 +13,7 @@ Entity Framework is an open-source Object-Relational Mapper (ORM) for .NET appli
 
 ## What is the Code-First approach?
 
-In the Code-First approach, the focus is on the application’s domain. Developers define domain entities as classes, and Entity Framework uses these classes to generate the corresponding database schema. This approach allows you to design the application logic first, rather than starting with the database design.
+In the Code-First approach, the focus is on the application’s domain. Developers define domain entities as classesand Entity Framework uses these classes to generate the corresponding database schema. This approach allows you to design the application logic first, rather than starting with the database design.
 
 ## What is the Database-First approach?
 

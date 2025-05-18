@@ -9,7 +9,7 @@ categories: ["AI/LLM", "Security"]
 
 # Preventing Information Leakage in LLM Applications
 
-Disclosure of sensitive information in applications using large language models (LLMs) can pose serious threats to privacy, data security, and intellectual property protection. Fortunately, there are methods to prevent such leakage.
+Disclosure of sensitive information in applications using large language models (LLMs) can pose serious threats to privacy, data securityand intellectual property protection. Fortunately, there are methods to prevent such leakage.
 
 ## What is sensitive information disclosure?
 
@@ -57,4 +57,4 @@ Improper management of training data leads to disclosure, which can enable data 
 
 ## Summary
 
-Managing sensitive information in LLM models requires a multi-layered approach encompassing technical, organizational, and educational protection strategies. Implementing sanitization, access control, and advanced privacy techniques are fundamental strategies that can significantly reduce the risk of data disclosure.
+Managing sensitive information in LLM models requires a multi-layered approach encompassing technical, organizationaland educational protection strategies. Implementing sanitization, access controland advanced privacy techniques are fundamental strategies that can significantly reduce the risk of data disclosure.

@@ -2,7 +2,7 @@
 title: "Introduction to LLMs: What Are They and How Do They Work?"
 date: "2024-11-20"
 slug: "intro-to-llms"
-excerpt: "A beginner-friendly explanation of Large Language Models (LLMs), how they work, and how they are used."
+excerpt: "A beginner-friendly explanation of Large Language Models (LLMs), how they workand how they are used."
 thumbnail: "/images/intro-to-llms-thumbnail.jpg"
 categories: ["AI/LLM"]
 ---
@@ -13,7 +13,7 @@ Large Language Models (LLMs) are AI algorithms trained on massive amounts of tex
 
 ## How Are LLMs Built?
 
-LLMs are based on neural network architectures, typically transformers. These networks consist of three main components: an input layer, multiple hidden layers, and an output layer. This layered structure allows LLMs to process information in a non-deterministic way — meaning they can generate different responses to the same prompt.
+LLMs are based on neural network architectures, typically transformers. These networks consist of three main components: an input layer, multiple hidden layersand an output layer. This layered structure allows LLMs to process information in a non-deterministic way — meaning they can generate different responses to the same prompt.
 
 ![Neuron Network Image](/images/neuron-network.png)
 
@@ -23,7 +23,7 @@ The input layer receives data like text or images. Hidden layers contain neurons
 
 ![Dogs Image](/images/dogs.png)
 
-Imagine an LLM designed to recognize sleeping dogs in images. The input layer processes the image, hidden layers analyze shapes, textures, and patterns, and the output layer determines the presence of a dog — with a probability score. The process isn't deterministic: the same input might produce slightly different results each time.
+Imagine an LLM designed to recognize sleeping dogs in images. The input layer processes the image, hidden layers analyze shapes, texturesand patternsand the output layer determines the presence of a dog — with a probability score. The process isn't deterministic: the same input might produce slightly different results each time.
 
 ## What Are Tokens?
 
@@ -69,7 +69,7 @@ Although it can be costly, fine-tuning often results in long-term savings due to
 RAG combines an LLM with external data sources. Since standard models don’t access the internet post-training, RAG provides them with up-to-date information from documents, databases, or APIs.
 
 **How It Works:**
-Upload a documentation file or knowledge base, and the model can use it to answer questions. This allows for accurate, context-aware responses beyond the model’s original training.
+Upload a documentation file or knowledge baseand the model can use it to answer questions. This allows for accurate, context-aware responses beyond the model’s original training.
 
 **Use Cases:**
 

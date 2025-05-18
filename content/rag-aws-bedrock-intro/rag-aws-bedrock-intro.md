@@ -11,7 +11,7 @@ categories: ["AI/LLM", "AWS"]
 
 Before diving into the main topic, it's worth recalling what RAG (Retrieval Augmented Generation) is and why AWS Bedrock is an interesting tool in this context.
 
-RAG is an approach that combines the generative capabilities of language models (LLMs) with searching external knowledge sources. In short, it allows the model to "read" documents and code, and then generate responses based on them.
+RAG is an approach that combines the generative capabilities of language models (LLMs) with searching external knowledge sources. In short, it allows the model to "read" documents and codeand then generate responses based on them.
 
 AWS Bedrock provides a managed RAG pipeline that automates the key stages of this process:
 
@@ -20,7 +20,7 @@ AWS Bedrock provides a managed RAG pipeline that automates the key stages of thi
 * Creating embeddings (vector representations)
 * Storing in a vector database
 
-Bedrock works with various vector stores, such as OpenSearch, Amazon Neptune, Pinecone, and Redis, which provides considerable flexibility.
+Bedrock works with various vector stores, such as OpenSearch, Amazon Neptune, Pineconeand Redis, which provides considerable flexibility.
 
 The main goal of this approach is to enrich language models with "external" knowledge – whether it's company documents, technical specifications, or source code – and to enable the generation of well-documented answers with references to the original sources.
 

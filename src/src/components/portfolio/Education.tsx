@@ -28,7 +28,7 @@ const educationHistory: EducationItem[] = [
     institution: "University of Zielona Gora",
     degree: "Bachelor of Engineering in Automation Control and Robotics",
     period: "2019 - 2023",
-    description: "Foundations in programming, algorithms, and software development, combined with core knowledge of control systems, automation technologies, and robotics."
+    description: "Foundations in programming, algorithmsand software development, combined with core knowledge of control systems, automation technologiesand robotics."
   }
 ];
 
@@ -38,14 +38,14 @@ const certifications: Certification[] = [
     issuer: "Amazon Web Services",
     date: "2025",
     url: "https://www.credly.com/badges/83e585cd-9443-476f-8d9a-e6b5601b18e1/linked_in_profile",
-    description: "Validates technical expertise in developing and maintaining applications on the AWS platform. Covers core AWS services, architecture best practices, and application development."
+    description: "Validates technical expertise in developing and maintaining applications on the AWS platform. Covers core AWS services, architecture best practicesand application development."
   },
   {
     name: "Ai_devs 3 Agents",
     issuer: "AI_devs",
     date: "2024",
     url: "https://credsverse.com/credentials/de59643a-5116-4f59-9da3-4cbcf4308305",
-    description: "Validates skills in building, optimizing, and deploying agent-based AI systems. Covers working with language models, tool integration, and maintaining production-ready applications."
+    description: "Validates skills in building, optimizingand deploying agent-based AI systems. Covers working with language models, tool integrationand maintaining production-ready applications."
   }
 ];
 

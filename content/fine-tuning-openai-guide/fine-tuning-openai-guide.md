@@ -2,7 +2,7 @@
 title: "Why and How to Use Fine-Tuning with OpenAI Models"
 date: "2024-12-18"
 slug: "fine-tuning-openai-guide"
-excerpt: "Learn when to use fine-tuning, how to prepare your data, and how to train a custom OpenAI model to improve performance and reduce prompt length."
+excerpt: "Learn when to use fine-tuning, how to prepare your dataand how to train a custom OpenAI model to improve performance and reduce prompt length."
 thumbnail: "/images/fine-tuning-openai-guide-thumbnail.jpg"
 categories: ["AI/LLM"]
 ---
@@ -42,7 +42,7 @@ To train an OpenAI model, you’ll need to provide a `.jsonl` (JSON Lines) file.
 ]}
 ```
 
-Each object contains a conversation with a system message, a user message, and the assistant's response. The more examples you provide, the better the model will generalize.
+Each object contains a conversation with a system message, a user messageand the assistant's response. The more examples you provide, the better the model will generalize.
 
 ## Real-World Example
 Imagine building an app that converts input words (e.g., verbs, nouns) into grammatically correct sentences. You want the model to transform input like "mom, I, yesterday, be, forest" into "Mom, I was in the forest yesterday."
@@ -143,4 +143,4 @@ print(response["choices"][0]["message"]["content"])
 ![Example Image](/images/example.png)
 
 ## Conclusion
-Fine-tuning gives you precision control over how the model responds. With a well-structured dataset and a clear goal, you can dramatically improve the quality, consistency, and relevance of your AI outputs.
+Fine-tuning gives you precision control over how the model responds. With a well-structured dataset and a clear goal, you can dramatically improve the quality, consistencyand relevance of your AI outputs.

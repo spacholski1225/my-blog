@@ -14,14 +14,14 @@ interface LeadershipItem {
 const leadershipItems: LeadershipItem[] = [
   {
   title: "AI Council — Workshops and Presentations on AI/LLM",
-  description: "Organized and led a series of workshops and presentations aimed at educating internal teams about Artificial Intelligence, Large Language Models (LLM), and AI-powered developer tools. Covered topics included machine learning, context windows, statelessness, and agent-based AI, with hands-on sessions using tools like GitHub Copilot, RooCode, AnythingLLM, and Ollama.",
+  description: "Organized and led a series of workshops and presentations aimed at educating internal teams about Artificial Intelligence, Large Language Models (LLM)and AI-powered developer tools. Covered topics included machine learning, context windows, statelessnessand agent-based AI, with hands-on sessions using tools like GitHub Copilot, RooCode, AnythingLLMand Ollama.",
   date: "2025 - Present",
   type: "company",
   organization: "Aucatne",
 },
   {
     title: "Knowledge Sharing on LinkedIn",
-    description: "Publish articles about practical AI applications, focusing on real-world use cases, implementation details, and insights gained from software development experience. Share knowledge to help professionals effectively leverage AI in their work.",
+    description: "Publish articles about practical AI applications, focusing on real-world use cases, implementation detailsand insights gained from software development experience. Share knowledge to help professionals effectively leverage AI in their work.",
     date: "2024 - Present",
     type: "personal-branding",
     organization: "LinkedIn",
