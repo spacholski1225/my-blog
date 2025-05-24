@@ -4,7 +4,7 @@ date: "2025-05-20"
 slug: "system-scalability-strategies"
 excerpt: "An in-depth analysis of vertical and horizontal scaling approaches for modern systems, their advantages, disadvantages, and when to use each strategy."
 thumbnail: "/images/system-scalability-strategies-thumbnail.png"
-categories: ["Cloud Computing", "System Architecture", "DevOps"]
+categories: ["Architecture", "DevOps"]
 ---
 
 # System Scalability Strategies: Horizontal vs. Vertical Scaling
@@ -104,7 +104,3 @@ Microservices architecture works perfectly with horizontal scaling. By dividing 
 - More easily identify and remove bottlenecks
 
 For example, in AWS, services such as Elastic Container Service (ECS) or Elastic Kubernetes Service (EKS) make it easier to deploy and manage microservices architecture.
-
-## Keywords
-
-cloud computing, horizontal scaling, vertical scaling, systems architecture, AWS, high loads, load balancing, infrastructure, DevOps, microservices, system performance, high availability, auto scaling, cost optimization, programming, application development, system design, scalability, software engineering
