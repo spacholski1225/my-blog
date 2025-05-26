@@ -22,7 +22,12 @@ export const metadata: Metadata = {
   title: "Szymon Pacholski Site",
   description: "The personal blog and portfolio of Szymon Pacholski, focused on modern software development, AI applicationsand backend architecture.",
   icons: {
-    icon: '/logo.png',
+    icon: [
+      { url: '/favicon.png', type: 'image/png', sizes: 'any' },
+      { url: '/logo.png', type: 'image/png' }
+    ],
+    apple: { url: '/logo.png', type: 'image/png' },
+    shortcut: { url: '/favicon.png' },
   },
 };
 
