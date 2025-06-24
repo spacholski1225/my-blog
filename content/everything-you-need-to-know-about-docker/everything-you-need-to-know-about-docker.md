@@ -1,13 +1,11 @@
 ---
-title: Everything you need to know about Docker"
+title: Everything you need to know about Docker
 date: "2025-06-24"
 slug: "everything-you-need-to-know-about-docker"
 excerpt: "Learn Docker from scratch - solve the 'it works on my machine' problem and master containerization with practical examples and best practices."
 thumbnail: "/images/everything-you-need-to-know-about-docker-thumbnail.png"
 categories: ["Docker", "DevOps", "Tutorial"]
 ---
-
-# Docker for Beginners: A Complete Guide to Containerization
 
 Have you ever experienced an application that works on your computer but stops working when moved to a server? If so, you're not alone. This is a common problem, but there's a solution that solves the "it works on my machine" issue - it's called **Docker**.
 
