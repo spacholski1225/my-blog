@@ -11,6 +11,8 @@ categories: ["AI/LLM", "MCP", "Tutorial"]
 
 Model Context Protocol (MCP) is a communication standard that allows AI assistants to connect with external tools and services. In this guide, I'll show you how to create your own MCP server using an integration with AnkiConnect - an API for the popular learning application Anki.
 
+If you’d like to test my **MCP server implementation**, you can find the repository here: [GitHub Repository](https://github.com/spacholski1225/anki-connect-mcp).
+
 ## What is AnkiConnect?
 
 AnkiConnect is an add-on for the Anki application that provides a REST API allowing programmatic control over flashcards. With it, we can:
