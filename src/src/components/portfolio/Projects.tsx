@@ -16,6 +16,15 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "Anki Connect MCP Server",
+    description: "A Model Context Protocol (MCP) server that provides seamless integration with Anki through the AnkiConnect add-on. This open-source server enables AI assistants and other MCP clients to interact with Anki flashcard collections programmatically, allowing natural conversation-based management of flashcards.",
+    motivation: "The project aimed to bridge the gap between AI assistants and Anki's powerful spaced repetition system. By implementing the standardized MCP protocol, the server allows users to manage their flashcard collections naturally through conversation with AI assistants like Claude Desktop, making learning more intuitive and efficient.",
+    techStack: ["TypeScript", "Node.js", "MCP", "AnkiConnect API", "REST API", "Open Source"],
+    repoUrl: "https://github.com/spacholski1225/anki-connect-mcp",
+    demoUrl: "",
+    image: "/images/anki-connect-mcp.gif"
+  },
+  {
     title: "An app that supports communication for people with autism",
     description: "An advanced AI-based autism support app created in partnership with the non-profit Generado foundation. The app helps with communication and daily activities, offering interactive tools and mechanisms to develop social skills.",
     motivation: "The aim of the project was to create a modern tool to support people with autism and their caregivers in everyday challenges. The project was carried out in cooperation with experts, enabling real support thanks to AI technology. The PoC (Proof of Concept) was positively evaluated by the foundation, which led to the development of the full version of the application.",
