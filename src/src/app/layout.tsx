@@ -5,6 +5,7 @@ import "./prism-theme.css";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import ScrollToTop from "../components/layout/ScrollToTop";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -46,6 +47,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <ScrollToTop />
+        <Analytics />
       </body>
     </html>
   );
