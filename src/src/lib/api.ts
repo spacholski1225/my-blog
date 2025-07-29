@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
+import remarkGfm from 'remark-gfm';
 import { rehype } from 'rehype';
 import rehypePrism from 'rehype-prism-plus'; // Modern syntax highlighting
 import { remarkImages } from '../../lib/remark-images';
@@ -251,6 +252,7 @@ export async function markdownToHtml(markdown: string, filePath: string = '') {
     
     // First convert markdown to HTML with our custom plugins
     const remarkResult = await remark()
+      .use(remarkGfm) // Add GitHub Flavored Markdown support (including tables)
       .use(remarkImages, { relativePath: postDir })
       .use(html, { sanitize: false })
       .process(markdown);
