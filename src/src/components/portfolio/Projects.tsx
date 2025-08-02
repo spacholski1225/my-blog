@@ -16,6 +16,15 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "AI Code Review Agent",
+    description: "An AI-powered GitHub agent that reviews pull requests with full project context, including Jira tasks, comments, and attachments, and enforces internal coding standards.",
+    motivation: "Reduce bottlenecks caused by slow and repetitive code reviews, especially with outsourced teams, by automating initial PR verification.",
+    techStack: ["LangChain", "TypeScript", "GitHub Actions", "Anthropic"],
+    demoUrl: "",
+    image: "/images/ai-agent.png",
+    hideButtons: true
+  },
+  {
     title: "Anki Connect MCP Server",
     description: "A Model Context Protocol (MCP) server that provides seamless integration with Anki through the AnkiConnect add-on. This open-source server enables AI assistants and other MCP clients to interact with Anki flashcard collections programmatically, allowing natural conversation-based management of flashcards.",
     motivation: "The project aimed to bridge the gap between AI assistants and Anki's powerful spaced repetition system. By implementing the standardized MCP protocol, the server allows users to manage their flashcard collections naturally through conversation with AI assistants like Claude Desktop, making learning more intuitive and efficient.",
