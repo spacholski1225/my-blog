@@ -1,5 +1,5 @@
 ---
-title: "🗑 Garbage Collector in .NET — How It Works Under the Hood"
+title: "Garbage Collector in .NET — How It Works Under the Hood"
 date: "2025-08-26"
 slug: "dotnet-garbage-collector-under-the-hood"
 excerpt: "A deep dive into how .NET's Garbage Collector works, from mark-and-compact algorithms to generational collection and performance optimization strategies"
@@ -7,7 +7,7 @@ thumbnail: "/images/dotnet-garbage-collector-under-the-hood-thumbnail.png"
 categories: ["Programming", ".NET"]
 ---
 
-# 🗑 Garbage Collector in .NET — How It Works Under the Hood
+# Garbage Collector in .NET — How It Works Under the Hood
 
 The .NET Garbage Collector is one of the most sophisticated memory management systems in modern programming platforms. Understanding how it works can help you write more efficient applications and troubleshoot memory-related issues.
 
