@@ -3,8 +3,8 @@ title: "High Computational Costs and Infrastructure in Working with LLMs - How t
 date: "2025-09-29"
 slug: "high-computational-costs-llm-infrastructure-how-to-reduce"
 excerpt: "Large language models offer tremendous capabilities but come with significant infrastructure and computational costs. Learn practical techniques to optimize expenses while maintaining response quality - from fine-tuned smaller models to hybrid architectures."
-thumbnail: "/images/default-thumbnail.png"
-categories: ["AI", "LLM", "Cost Optimization", "Infrastructure"]
+thumbnail: "/images/high-computational-costs-llm-infrastructure-how-to-reduce-thumbnail.png"
+categories: ["AI/LLM", "MLOps"]
 ---
 
 # High Computational Costs and Infrastructure in Working with LLMs - How to Reduce Them
