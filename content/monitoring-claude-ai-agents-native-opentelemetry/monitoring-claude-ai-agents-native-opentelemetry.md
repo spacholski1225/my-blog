@@ -3,7 +3,7 @@ title: "Monitoring Claude AI Agents: Why Standard Tools Don't Work (And What Doe
 date: "2025-10-27"
 slug: "monitoring-claude-ai-agents-native-opentelemetry"
 excerpt: "Building an AI agent is exciting. Monitoring it in production without the right approach is terrifying. Here's what I learned after 7 days of debugging."
-thumbnail: "/images/default-thumbnail.png"
+thumbnail: "/images/monitoring-claude-ai-agents-native-opentelemetry-thumbnail.png"
 categories: ["AI/LLM", "Observability", "Claude Code"]
 ---
 
