@@ -157,8 +157,6 @@ Run all unit tests:
 !npm run test:unit
 ````
 
-```
-
 You can now trigger it in the terminal using `/run-tests`.
 
 ---
@@ -181,4 +179,3 @@ With the right setup (**CLAUDE.md** + **.claude/settings.json**), you can build 
 
 In the next post, we’ll cover how to set up an **MCP Puppeteer server** and connect Claude Code to your browser to debug and test web apps in real time.
 
-```
