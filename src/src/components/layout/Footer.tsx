@@ -146,7 +146,7 @@ const Footer = () => {
           opacity: 0.5,
           fontSize: '0.875rem'
         }}>
-          <p>© 2025 szymonpacholski.com. All rights reserved.</p>
+          <p>© 2026 szymonpacholski.com. All rights reserved.</p>
         </div>
       </div>
     </footer>
