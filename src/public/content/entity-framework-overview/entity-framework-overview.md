@@ -3,7 +3,7 @@ title: "Introduction to Entity Framework"
 date: "2021-03-29"
 slug: "entity-framework-overview"
 excerpt: "An overview of Entity Framework, a popular open-source ORM for .NET, including Code-First and Database-First approaches."
-thumbnail: "/images/ef.jpg"
+thumbnail: "/images/ef.webp"
 categories: ["Programming"]
 ---
 

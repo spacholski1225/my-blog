@@ -3,7 +3,7 @@ title: "Feature Toggles: Dynamic Feature Management in Modern Applications"
 date: "2025-05-26"
 slug: "feature-flags-dynamic-feature-management"
 excerpt: "Learn how feature toggles enable safe deployments, A/B testing, and runtime feature control. Comprehensive guide covering implementation patterns, best practices, and lifecycle management."
-thumbnail: "/images/feature-flags-dynamic-feature-management-thumbnail.png"
+thumbnail: "/images/feature-flags-dynamic-feature-management-thumbnail.webp"
 categories: ["Architecture"]
 ---
 

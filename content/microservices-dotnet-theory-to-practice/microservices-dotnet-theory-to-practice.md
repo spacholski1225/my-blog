@@ -3,7 +3,7 @@ title: "Microservices in .NET: From Theory to Practice"
 date: "2025-08-04"
 slug: "microservices-dotnet-theory-to-practice"
 excerpt: "Explore the world of microservices in the .NET ecosystem - from basic concepts to advanced design patterns. Learn when to use microservices, best practices, and practical implementation strategies."
-thumbnail: "/images/microservices-dotnet-theory-to-practice-thumbnail.png"
+thumbnail: "/images/microservices-dotnet-theory-to-practice-thumbnail.webp"
 categories: ["Architecture", ".NET"]
 ---
 

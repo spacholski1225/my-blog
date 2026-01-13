@@ -3,7 +3,7 @@ title: "From Zero to Claude Code: Your Complete Setup Guide"
 date: "2025-10-20"
 slug: "claude-code-complete-setup"
 excerpt: "A step-by-step guide to setting up Claude Code from scratch, including project configuration, CLI installation, and workflow best practices."
-thumbnail: "/images/claude-code-complete-setup-thumbnail.png"
+thumbnail: "/images/claude-code-complete-setup-thumbnail.webp"
 categories: ["Tutorial", "Claude Code"]
 ---
 

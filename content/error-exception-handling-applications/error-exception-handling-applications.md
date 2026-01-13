@@ -3,7 +3,7 @@ title: "Error and Exception Handling in Applications"
 date: "2025-09-03"
 slug: "error-exception-handling-applications"
 excerpt: "Learn how to properly handle errors and exceptions in your applications to improve stability, make debugging easier, and provide better user experience."
-thumbnail: "/images/error-exception-handling-applications-thumbnail.png"
+thumbnail: "/images/error-exception-handling-applications-thumbnail.webp"
 categories: ["Programming", ".NET"]
 ---
 

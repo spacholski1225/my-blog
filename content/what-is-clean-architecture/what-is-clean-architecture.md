@@ -3,7 +3,7 @@ title: "What is Clean Architecture?"
 date: "2025-03-28"
 slug: "what-is-clean-architecture"
 excerpt: "An explanation of Clean Architecture, its layers, principlesand benefits."
-thumbnail: "/images/what-is-clean-architecture-thumbnail.jpg"
+thumbnail: "/images/what-is-clean-architecture-thumbnail.webp"
 categories: ["Architecture"]
 ---
 
@@ -22,7 +22,7 @@ This architecture is based on dividing the application into concentric layers:
 * **Interface Adapters Layer:** Adapts data between the use cases layer and external elements.
 * **Frameworks and Drivers Layer:** Contains all the technical details, such as databases, frameworks, or user interfaces.
 
-![Clean Architecture Image](/what-is-clean-architecture-architecture.png)
+![Clean Architecture Image](/what-is-clean-architecture-architecture.webp)
 Source: blog.cleancoder.com
 
 ## Dependency Rule

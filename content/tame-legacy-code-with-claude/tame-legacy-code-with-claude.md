@@ -4,7 +4,7 @@ title: "How I Tame Legacy Code with Claude Code"
 date: "2025-11-03"
 slug: "tame-legacy-code-with-claude"
 excerpt: "Discover how I use Claude Code to manage legacy codebases more efficiently — from context management and CLAUDE.md to GitHub integration and automation."
-thumbnail: "/images/tame-legacy-code-with-claude-thumbnail.png"
+thumbnail: "/images/tame-legacy-code-with-claude-thumbnail.webp"
 categories: ["AI Tools", "Claude Code", "Productivity"]
 ----------------------------------------------------------------
 

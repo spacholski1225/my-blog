@@ -3,7 +3,7 @@ title: "Understanding LLM Jailbreaking: Testing AI Safety Boundaries"
 date: "2025-02-11"
 slug: "understanding-llm-jailbreaking"
 excerpt: "An exploration of how jailbreaking techniques for language models work and their potential benefits for AI safety research."
-thumbnail: "/images/understanding-llm-jailbreaking-thumbnail.jpg"
+thumbnail: "/images/understanding-llm-jailbreaking-thumbnail.webp"
 categories: ["Security", "AI/LLM"]
 ---
 

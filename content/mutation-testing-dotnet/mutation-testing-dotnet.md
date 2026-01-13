@@ -3,7 +3,7 @@ title: "Mutation Testing in .NET with Stryker"
 date: "2024-03-11"
 slug: "mutation-testing-dotnet"
 excerpt: "Learn how mutation testing helps evaluate the quality of your unit tests by injecting artificial bugs into your code. We’ll walk through a practical example using Stryker.NET."
-thumbnail: "/images/mutation-testing-dotnet-thumbnail.jpg"
+thumbnail: "/images/mutation-testing-dotnet-thumbnail.webp"
 categories: [".NET"]
 ---
 

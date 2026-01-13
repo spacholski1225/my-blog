@@ -3,7 +3,7 @@ title: "How to Run Your Own LLM Locally in Python — Using Bielik-7B and Huggin
 date: "2025-11-10"
 slug: "run-local-llm-bielik-7b"
 excerpt: "Learn how to run the open-source Polish LLM Bielik-7B locally on Apple Silicon using Python and Hugging Face Transformers."
-thumbnail: "/images/run-local-llm-bielik-7b-thumbnail.png"
+thumbnail: "/images/run-local-llm-bielik-7b-thumbnail.webp"
 categories: ["AI/LLM", "Local LLM", "Python"]
 ---
 

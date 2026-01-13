@@ -3,7 +3,7 @@ title: "SmolAgents: Building Custom AI Agents with Hugging Face"
 date: "2025-01-08"
 slug: "smolagents-custom-ai-agents-huggingface"
 excerpt: "Learn how to build powerful AI agents with Hugging Face's SmolAgents library and understand the differences between code-based and JSON-based agents."
-thumbnail: "/images/smolagents-custom-ai-agents-huggingface-thumbnail.png"
+thumbnail: "/images/smolagents-custom-ai-agents-huggingface-thumbnail.webp"
 categories: ["AI/LLM"]
 ---
 
@@ -54,7 +54,7 @@ With **CodeAgent**, the agent not only makes decisions but also generates and ex
 
 Additionally, it will generate and execute Python code. For example, when running the above example, the agent will first find the caloric value of a pastry and the average size of a bite, then calculate the appropriate caloric value based on this code.
 
-![SmolAgents Image](smolagents.png)
+![SmolAgents Image](smolagents.webp)
 
 Special features:
 * **Local code execution** – The agent runs generated code in a secure Python environment.
@@ -75,7 +75,7 @@ agent = ToolCallingAgent(tools=[DuckDuckGoSearchTool()], model=model)
 
 agent.run("I'm eating a pastry right now, I think I've taken about 3 larger bites. How many calories would that be?")
 ```
-![Example Image](smolagents-example.png)
+![Example Image](smolagents-example.webp)
 
 **Special features**:
 * **Security** – No coding and code execution takes place in the local environment. Instead, the agent generates a "request" in JSON format describing the task that the tool should perform.

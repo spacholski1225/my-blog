@@ -3,7 +3,7 @@ title: "LangChain and LangGraph – The Duo That Will Elevate Your AI Agent to t
 date: "2025-08-10"
 slug: "langchain-langgraph-ai-agent-development"
 excerpt: "Discover how LangChain and LangGraph work together to build sophisticated AI applications beyond simple LLM prompts, enabling complex workflows with retrieval, agents, and dynamic decision-making."
-thumbnail: "/images/angchain-langgraph-ai-agent-development-thumbnail.png"
+thumbnail: "/images/angchain-langgraph-ai-agent-development-thumbnail.webp"
 categories: ["AI/LLM"]
 ---
 

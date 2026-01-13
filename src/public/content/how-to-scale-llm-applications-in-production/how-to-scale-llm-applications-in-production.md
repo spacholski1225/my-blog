@@ -3,7 +3,7 @@ title: "How to Scale LLM Applications in Production"
 date: "2025-12-04"
 slug: "how-to-scale-llm-applications-in-production"
 excerpt: "Building a ChatGPT prototype takes one evening. Deploying it to thousands of users? That's where the real engineering begins. Learn how to transition from 'works on my machine' to stable production using modern LLM tooling."
-thumbnail: "/images/how-to-scale-llm-applications-in-production-thumbnail.png"
+thumbnail: "/images/how-to-scale-llm-applications-in-production-thumbnail.webp"
 categories: ["AI/LLM", "MLOps"]
 ---
 

@@ -3,7 +3,7 @@ title: "Understanding LlamaIndex: Components, Toolsand Agents for LLM-Powered Ag
 date: "2025-03-11"
 slug: "llamaindex-components-tools-agents"
 excerpt: "An overview of LlamaIndex, a comprehensive tool for building Language Model (LLM) powered agents, focusing on its core components, toolsand agents."
-thumbnail: "/images/llamaindex-components-tools-agents-thumbnail.jpg"
+thumbnail: "/images/llamaindex-components-tools-agents-thumbnail.webp"
 categories: ["AI/LLM"]
 ---
 

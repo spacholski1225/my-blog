@@ -3,7 +3,7 @@ title: "Understanding Dependency Injection in C#"
 date: "2024-03-12"
 slug: "dependency-injection-csharp"
 excerpt: "Learn how Dependency Injection can improve your code structure, make your applications more testableand increase flexibility. A practical overview with C# examples."
-thumbnail: "/images/dependency-injection-csharp-thumbnail.jpg"
+thumbnail: "/images/dependency-injection-csharp-thumbnail.webp"
 categories: ["Architecture", ".NET"]
 ---
 

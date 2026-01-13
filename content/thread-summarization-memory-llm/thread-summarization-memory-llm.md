@@ -3,7 +3,7 @@ title: "Thread Summarization: Adding Memory to LLM Applications"
 date: "2024-12-21"
 slug: "thread-summarization-memory-llm"
 excerpt: "Learn how to implement memory in stateless LLM applications using Thread Summarization technique"
-thumbnail: "/images/thread-summarization-memory-llm-thumbnail.jpg"
+thumbnail: "/images/thread-summarization-memory-llm-thumbnail.webp"
 categories: ["AI/LLM", "Programming"]
 ---
 
@@ -19,7 +19,7 @@ This statelessness stems from the design principles behind LLM architecture. Alt
 
 In this example, you can see that the model has no idea which movie the user is talking about:
 
-![Example of stateless interaction](/image/example1.png)
+![Example of stateless interaction](/image/example1.webp)
 
 One solution is to emulate long-term memory during conversations with the model at the application level, where we store a summary of conversation history and add it to each query.
 
@@ -91,7 +91,7 @@ async def chat():
 This pseudo code (full version available [here](https://github.com/spacholski1225/Blog/tree/main/ai_examples/thread)) creates a summary of the previous conversation between the user and the assistant and then adds the user's last message. Of course, with this approach, we lose some information, but we can easily expand the mechanism to include additional searching of previous threads if the summary is insufficient to provide an answer.
 
 
-![Summarize thread interaction](/image/example2.png)
+![Summarize thread interaction](/image/example2.webp)
 
 As you can see after asking about a favorite part of Star Wars, the model responds correctly, according to the information given to it earlier.
 

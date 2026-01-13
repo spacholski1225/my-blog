@@ -3,7 +3,7 @@ title: Everything you need to know about Docker
 date: "2025-06-24"
 slug: "everything-you-need-to-know-about-docker"
 excerpt: "Learn Docker from scratch - solve the 'it works on my machine' problem and master containerization with practical examples and best practices."
-thumbnail: "/images/everything-you-need-to-know-about-docker-thumbnail.png"
+thumbnail: "/images/everything-you-need-to-know-about-docker-thumbnail.webp"
 categories: ["Docker", "DevOps", "Tutorial"]
 ---
 

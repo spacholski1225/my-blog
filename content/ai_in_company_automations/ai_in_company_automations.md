@@ -3,7 +3,7 @@ title: "Automation - Saving Time and Reducing Errors"
 date: "2025-02-26"
 slug: "automation-saving-time-reducing-errors"
 excerpt: "Learn how automation and AI can save time, reduce errorsand improve decision-making in your business."
-thumbnail: "/images/ai_in_company_automations-thumbnail.jpg"
+thumbnail: "/images/ai_in_company_automations-thumbnail.webp"
 categories: ["AI/LLM"]
 ---
 

@@ -3,7 +3,7 @@ title: "RAG and AWS Bedrock - A Brief Introduction"
 date: "2025-04-21"
 slug: "rag-aws-bedrock-intro"
 excerpt: "A short introduction to Retrieval Augmented Generation (RAG) and why AWS Bedrock is an interesting tool in this context."
-thumbnail: "/images/rag-aws-bedrock-intro-thumbnail.jpg"
+thumbnail: "/images/rag-aws-bedrock-intro-thumbnail.webp"
 categories: ["AI/LLM", "AWS"]
 ---
 

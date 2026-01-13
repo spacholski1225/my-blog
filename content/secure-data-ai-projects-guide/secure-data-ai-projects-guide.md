@@ -3,7 +3,7 @@ title: "How to Secure Data in AI Projects: A Comprehensive Guide"
 date: "2025-09-23"
 slug: "secure-data-ai-projects-guide"
 excerpt: "A practical guide to protecting sensitive data when deploying AI models in production, covering everything from anonymization to regulatory compliance."
-thumbnail: "/images/secure-data-ai-projects-guide-thumbnail.png"
+thumbnail: "/images/secure-data-ai-projects-guide-thumbnail.webp"
 categories: ["AI/LLM"]
 ---
 

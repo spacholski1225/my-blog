@@ -3,7 +3,7 @@ title: "Mastering Claude Code: A Guide to Skill-Based Architecture"
 date: "2026-01-08"
 slug: "ai-partner-skill-based-prompt-engineering"
 excerpt: "Moving from chaotic prompts to modular architecture. A guide to designing LLM tools that minimize hallucinations."
-thumbnail: "/images/ai-partner-skill-based-prompt-engineering-thumbnail.png"
+thumbnail: "/images/ai-partner-skill-based-prompt-engineering-thumbnail.webp"
 categories: ["AI/LLM", "Prompt Engineering", "AI Agents"]
 ---
 

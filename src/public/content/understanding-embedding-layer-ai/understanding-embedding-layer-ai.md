@@ -3,7 +3,7 @@ title: "Where Did My Words Go? – Understanding the Embedding Layer in AI"
 date: "2025-12-25"
 slug: "understanding-embedding-layer-ai"
 excerpt: "Ever wondered what ChatGPT actually 'sees' when you type a sentence? Dive deep into the crucial moment when words stop being words and become a mathematical map of meaning."
-thumbnail: "/images/understanding-embedding-layer-ai-thumbnail.png"
+thumbnail: "/images/understanding-embedding-layer-ai-thumbnail.webp"
 categories: ["AI/LLM", "Machine Learning"]
 ---
 

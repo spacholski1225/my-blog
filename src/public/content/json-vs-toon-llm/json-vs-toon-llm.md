@@ -3,7 +3,7 @@ title: "JSON vs TOON: Which Format Works Better with Large Language Models?"
 date: "2025-11-17"
 slug: "json-vs-toon-llm"
 excerpt: "Comparison of JSON and TOON formats in the context of large language models and token efficiency."
-thumbnail: "/images/json-vs-toon-llm-thumbnail.png"
+thumbnail: "/images/json-vs-toon-llm-thumbnail.webp"
 categories: ["AI/LLM", "Architecture"]
 ---
 

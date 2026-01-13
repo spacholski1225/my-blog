@@ -3,7 +3,7 @@ title: "How to Handle Constant LLM Model Changes in Business"
 date: "2025-09-08"
 slug: "handling-constant-llm-model-changes-business"
 excerpt: "Large Language Models evolve rapidly with new versions every few months. Learn how to build stable processes that adapt to constant model evolution while maintaining product reliability."
-thumbnail: "/images/handling-constant-llm-model-changes-business-thumbnail.png"
+thumbnail: "/images/handling-constant-llm-model-changes-business-thumbnail.webp"
 categories: ["AI/LLM", "MLOps"]
 ---
 

@@ -3,7 +3,7 @@ title: ".NET vs .NET Framework – What to Choose in 2025?"
 date: "2025-07-21"
 slug: "dotnet-vs-dotnet-framework-2025"
 excerpt: "Navigate the .NET ecosystem in 2025. Learn the key differences between .NET and .NET Framework, and discover which platform is right for your projects."
-thumbnail: "/images/dotnet-vs-dotnet-framework-2025-thumbnail.png"
+thumbnail: "/images/dotnet-vs-dotnet-framework-2025-thumbnail.webp"
 categories: [".NET"]
 ---
 

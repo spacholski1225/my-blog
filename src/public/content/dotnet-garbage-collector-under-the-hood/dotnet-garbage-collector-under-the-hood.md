@@ -3,7 +3,7 @@ title: "Garbage Collector in .NET — How It Works Under the Hood"
 date: "2025-08-26"
 slug: "dotnet-garbage-collector-under-the-hood"
 excerpt: "A deep dive into how .NET's Garbage Collector works, from mark-and-compact algorithms to generational collection and performance optimization strategies"
-thumbnail: "/images/dotnet-garbage-collector-under-the-hood-thumbnail.png"
+thumbnail: "/images/dotnet-garbage-collector-under-the-hood-thumbnail.webp"
 categories: ["Programming", ".NET"]
 ---
 

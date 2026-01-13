@@ -3,7 +3,7 @@ title: "Using AutoMapper with DTOs in .NET"
 date: "2021-07-09"
 slug: "automapper-dto-net"
 excerpt: "Learn how to use AutoMapper to simplify mapping between domain models and DTOs in .NET applications."
-thumbnail: "/images/automapper.png"
+thumbnail: "/images/automapper.webp"
 categories: ["Programming", "Architecture"]
 ---
 

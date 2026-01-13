@@ -3,7 +3,7 @@ title: "Why and How to Use Fine-Tuning with OpenAI Models"
 date: "2024-12-18"
 slug: "fine-tuning-openai-guide"
 excerpt: "Learn when to use fine-tuning, how to prepare your dataand how to train a custom OpenAI model to improve performance and reduce prompt length."
-thumbnail: "/images/fine-tuning-openai-guide-thumbnail.jpg"
+thumbnail: "/images/fine-tuning-openai-guide-thumbnail.webp"
 categories: ["AI/LLM"]
 ---
 
@@ -104,7 +104,7 @@ After running this script, you’ll have a properly formatted training file, rea
 Once your .jsonl file is ready:
 
 1. Log in to the OpenAI platform.
-![Dashboard Image](/images/dashboard.png)
+![Dashboard Image](/images/dashboard.webp)
 
 2. Go to the Fine-tuning tab in the dashboard.
 3. Click Create a fine-tuned model.
@@ -117,7 +117,7 @@ Validation will check for formatting errors and any content that violates OpenAI
 After training, OpenAI provides a loss chart that shows how the model's accuracy improves over time. A flattening green line typically indicates convergence on the test dataset.
 
 
-![Chart Image](/images/chart.png)
+![Chart Image](/images/chart.webp)
 
 ## Using Your Fine-Tuned Model via API
 Once training is complete, copy the value of the Output model and use it in the API request:
@@ -140,7 +140,7 @@ response = openai.ChatCompletion.create(
 print(response["choices"][0]["message"]["content"])
 ```
 ### Example
-![Example Image](/images/example.png)
+![Example Image](/images/example.webp)
 
 ## Conclusion
 Fine-tuning gives you precision control over how the model responds. With a well-structured dataset and a clear goal, you can dramatically improve the quality, consistencyand relevance of your AI outputs.

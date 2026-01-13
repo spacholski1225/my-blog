@@ -4,7 +4,7 @@ title: "Data Quality and LLM Hallucinations – Why Language Models 'Make Things
 date: "2025-10-13"
 slug: "data-quality-llm-hallucinations"
 excerpt: "Language models can write fluently and convincingly, but they don't always tell the truth. Learn why LLMs hallucinate and how to prevent it using RAG, fact-checking, and prompt engineering techniques."
-thumbnail: "/images/data-quality-llm-hallucinations-thumbnail.png"
+thumbnail: "/images/data-quality-llm-hallucinations-thumbnail.webp"
 categories: ["AI/LLM"]
 ---------------------------------------------
 

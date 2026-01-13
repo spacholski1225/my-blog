@@ -3,7 +3,7 @@ title: "From POC to Production: How to Avoid Burning Your AI Budget and Common P
 date: "2025-12-08"
 slug: "from-poc-to-production-ai-implementation"
 excerpt: "Learn how to overcome analysis paralysis in AI adoption, start with small steps, and avoid the 5 most common mistakes that turn AI projects into budget black holes instead of successful implementations."
-thumbnail: "/images/from-poc-to-production-ai-implementation-thumbnail.png"
+thumbnail: "/images/from-poc-to-production-ai-implementation-thumbnail.webp"
 categories: ["AI/LLM", "MLOps"]
 ---
 

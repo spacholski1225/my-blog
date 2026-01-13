@@ -3,7 +3,7 @@ title: "What is System Design and Why is it Critical?"
 date: "2025-09-17"
 slug: "what-is-system-design-and-why-is-it-critical"
 excerpt: "Understanding the fundamentals of system design: key principles, components, and patterns for building scalable, reliable, and maintainable distributed systems."
-thumbnail: "/images/what-is-system-design-and-why-is-it-critical-thumbnail.png"
+thumbnail: "/images/what-is-system-design-and-why-is-it-critical-thumbnail.webp"
 categories: ["Architecture"]
 ---
 

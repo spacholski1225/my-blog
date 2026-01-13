@@ -3,7 +3,7 @@ title: "Understanding LINQ Deferred Execution: Why Your Queries Don't Run When Y
 date: "2025-08-19"
 slug: "linq-deferred-execution-explained"
 excerpt: "Learn how LINQ's deferred execution works, why it matters for performance, and when you should materialize your queries to avoid unexpected behavior."
-thumbnail: "/images/inq-deferred-execution-explained-thumbnail.png"
+thumbnail: "/images/inq-deferred-execution-explained-thumbnail.webp"
 categories: ["Linq", ".NET"]
 ---
 

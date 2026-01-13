@@ -3,7 +3,7 @@ title: "Understanding AI Hallucinations: When Artificial Intelligence Makes Thin
 date: "2025-01-29"
 slug: "understanding-ai-hallucinations"
 excerpt: "Learn what AI hallucinations are, why they occurand how to handle them effectively in your AI interactions."
-thumbnail: "/images/hallucinations.png"
+thumbnail: "/images/hallucinations.webp"
 categories: ["AI/LLM"]
 ---
 

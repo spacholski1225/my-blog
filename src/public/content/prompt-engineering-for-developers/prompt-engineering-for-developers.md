@@ -3,7 +3,7 @@ title: "Prompt Engineering: What Every Developer Should Know"
 date: "2024-11-28"
 slug: "prompt-engineering-for-developers"
 excerpt: "Learn the key principles of prompt engineering and why mastering it is essential when working with large language models like GPT-4."
-thumbnail: "/images/prompt-engineering-for-developers-thumbnail.jpg"
+thumbnail: "/images/prompt-engineering-for-developers-thumbnail.webp"
 categories: ["AI/LLM"]
 ---
 
@@ -18,7 +18,7 @@ Prompt engineering is the practice of designing prompts (inputs to the model) wi
 Although many LLMs support multiple languages, most are optimized for English. As the chart below shows, English prompts outperform Polish by 3.4% in model effectiveness.
 
 
-![Chart Image](/images/prompt_engineering_chart.png)
+![Chart Image](/images/prompt_engineering_chart.webp)
 Source: [OpenAI](https://cdn.openai.com/papers/gpt-4.pdf)
 
 Even a small performance gap can significantly impact production-level applications. That’s why English is recommended for mission-critical use cases, while other languages may be fine for local or experimental purposes.
@@ -58,18 +58,18 @@ The structure of your input data affects token usage. Consider the following exa
 }
 ```
 
-![Tiktokenizer1 Image](/images/tiktokenizer.png)
+![Tiktokenizer1 Image](/images/tiktokenizer.webp)
 
 The same data in YAML format uses 34 fewer tokens. That may not seem like much, but across thousands of requests, it adds up.
 
-![Tiktokenizer2 Image](/images/tiktokenizer2.png)
+![Tiktokenizer2 Image](/images/tiktokenizer2.webp)
 
 ## How to Optimize Your Prompts
 ### 1. Restrict Context
 Assign the model a specific role and clearly define the problem. Example:
 
 
-![Prompt Image](/images/prompt.png)
+![Prompt Image](/images/prompt.webp)
 Source: OpenAI Prompt Examples
 
 ### 2. Set Clear Objectives
@@ -107,7 +107,7 @@ This often improves accuracy and reasoning.
 ## Case Study: Prompt from AI Devs Course
 In an AI Devs training, I crafted a prompt instructing the model to parse a JSON-based map and return a description of a field’s contents. The prompt was segmented using XML-like tags for clarity. This structure made it highly maintainable and readable.
 
-![Prompt2 Image](/images/prompt2.png)
+![Prompt2 Image](/images/prompt2.webp)
 
 ## Monitoring Prompts
 LLMs are non-deterministic—outputs can vary. Since there’s no debugger, tracking and analyzing responses is essential.
@@ -121,7 +121,7 @@ LangFuse is a tool for monitoring LLM behavior. It lets you:
 
 Highly recommended for anyone building LLM-powered applications.
 
-![LangFuse Image](/images/langfuse.png)
+![LangFuse Image](/images/langfuse.webp)
 
 ### Example: Why Monitoring Matters
 In one case, a prompt worked perfectly unless the user input included a misleading command. The model then followed the user input instead of the system prompt.

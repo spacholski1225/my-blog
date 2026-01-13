@@ -3,7 +3,7 @@ title: "Hallucinations in AI Language Models: Causes and Solutions"
 date: "2025-02-04"
 slug: "hallucinations-in-ai-language-models"
 excerpt: "Exploring the phenomenon of AI hallucinations and effective strategies to minimize their occurrence in LLM applications."
-thumbnail: "/images/hallucinations-in-ai-language-models-thumbnail.jpg"
+thumbnail: "/images/hallucinations-in-ai-language-models-thumbnail.webp"
 categories: ["AI/LLM"]
 ---
 

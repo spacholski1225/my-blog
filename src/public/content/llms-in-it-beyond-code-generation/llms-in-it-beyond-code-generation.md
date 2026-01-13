@@ -3,7 +3,7 @@ title: "LLMs in IT: Beyond Code Generation"
 date: "2025-02-18"
 slug: "llms-in-it-beyond-code-generation"
 excerpt: "How large language models are transforming IT operations, documentationand system analysis"
-thumbnail: "/images/llms-in-it-beyond-code-generation-thumbnail.jpg"
+thumbnail: "/images/llms-in-it-beyond-code-generation-thumbnail.webp"
 categories: ["AI/LLM"]
 ---
 

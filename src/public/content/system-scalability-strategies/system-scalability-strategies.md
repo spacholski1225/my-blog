@@ -3,7 +3,7 @@ title: "System Scalability Strategies: Horizontal vs. Vertical Scaling"
 date: "2025-05-20"
 slug: "system-scalability-strategies"
 excerpt: "An in-depth analysis of vertical and horizontal scaling approaches for modern systems, their advantages, disadvantages, and when to use each strategy."
-thumbnail: "/images/system-scalability-strategies-thumbnail.png"
+thumbnail: "/images/system-scalability-strategies-thumbnail.webp"
 categories: ["Architecture", "DevOps"]
 ---
 

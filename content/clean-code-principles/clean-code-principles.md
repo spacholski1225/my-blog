@@ -3,7 +3,7 @@ title: "Clean Code Principles: SOLID, KISS, YAGNIand DRY"
 date: "2021-08-01"
 slug: "clean-code-principles"
 excerpt: "Explore essential principles for writing clean, maintainable code—SOLID, KISS, YAGNIand DRY—and learn how they improve code quality and clarity."
-thumbnail: "/images/clean-code-principles-thumbnail.jpg"
+thumbnail: "/images/clean-code-principles-thumbnail.webp"
 categories: ["Programming"]
 ---
 

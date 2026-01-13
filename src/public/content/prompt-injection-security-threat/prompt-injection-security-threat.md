@@ -3,7 +3,7 @@ title: "Prompt Injection: Understanding the Top Threat to Language Models"
 date: "2024-12-23"
 slug: "prompt-injection-security-threat"
 excerpt: "An overview of prompt injection, why it tops the OWASP threat list for language modelsand how to protect against it."
-thumbnail: "/images/prompt-injection-security-threat-thumbnail.jpg"
+thumbnail: "/images/prompt-injection-security-threat-thumbnail.webp"
 categories: ["Security", "AI/LLM"]
 ---
 

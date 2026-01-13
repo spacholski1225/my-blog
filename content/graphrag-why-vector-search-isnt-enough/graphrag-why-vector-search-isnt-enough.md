@@ -3,7 +3,7 @@ title: "GraphRAG – Why Vector Search Alone Isn't Enough"
 date: "2025-12-30"
 slug: "graphrag-why-vector-search-isnt-enough"
 excerpt: "Discover why traditional vector search hits a wall with complex queries and how GraphRAG transforms retrieval systems by understanding relationships, not just similarity."
-thumbnail: "/images/graphrag-why-vector-search-isnt-enough-thumbnail.png"
+thumbnail: "/images/graphrag-why-vector-search-isnt-enough-thumbnail.webp"
 categories: ["AI/LLM", "MLOps", "RAG"]
 ---
 

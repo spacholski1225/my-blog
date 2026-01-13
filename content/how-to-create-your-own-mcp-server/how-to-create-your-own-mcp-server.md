@@ -3,7 +3,7 @@ title: "How to Create Your Own MCP Server"
 date: "2025-06-17"
 slug: "how-to-create-your-own-mcp-server"
 excerpt: "Learn how to build a custom MCP server by creating an integration with AnkiConnect API. This comprehensive guide covers everything from setup to implementation."
-thumbnail: "/images/how-to-create-your-own-mcp-server-thumbnail.png"
+thumbnail: "/images/how-to-create-your-own-mcp-server-thumbnail.webp"
 categories: ["AI/LLM", "MCP", "Tutorial"]
 ---
 

@@ -3,7 +3,7 @@ title: "What is a Vector Database?"
 date: "2024-12-22"
 slug: "what-is-vector-database"
 excerpt: "An exploration of vector databases, embeddingsand their applications in AI and machine learning"
-thumbnail: "/images/what-is-vector-database-thumbnail.jpg"
+thumbnail: "/images/what-is-vector-database-thumbnail.webp"
 categories: ["AI/LLM"]
 ---
 
@@ -21,14 +21,14 @@ Embedding is the process of creating vectors from data. This process enables the
 
 A paragraph, text, single word, etc. can be encoded as a vector. For this purpose, an Embedding Model is necessary, which is responsible for converting data into vectors.
 
-![Embedding Image](/images/embedding.png)
+![Embedding Image](/images/embedding.webp)
 *Source: pinecone.io*
 
 ## Applications of Vector Databases
 
 Let's imagine a set of data stored in a vector database. Let's visualize them in a three-dimensional space (in reality, vectors can be from nearly 100 to 4000 dimensions).
 
-![Chart Image](/images/chart.png)
+![Chart Image](/images/chart.webp)
 *Source: weaviate.io*
 
 We can see that dog, catand wolf are positioned close to each other. Wolves and dogs are placed close together because dogs are close descendants of wolves. Similarly, cats and dogs are fairly classic pets.

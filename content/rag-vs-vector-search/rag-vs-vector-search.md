@@ -3,7 +3,7 @@ title: "Introduction to RAG and Vector Search in NLP"
 date: "2025-03-17"
 slug: "rag-vs-vector-search"
 excerpt: "An overview of Retrieval Augmented Generation (RAG) and vector search in Natural Language Processing, discussing when to use each approach."
-thumbnail: "/images/rag-vs-vector-search-thumbnail.jpg"
+thumbnail: "/images/rag-vs-vector-search-thumbnail.webp"
 categories: ['AI/LLM']
 ---
 
@@ -32,7 +32,7 @@ The RAG mechanism is based on two main components:
 ### Basics of vector search
 Vector search involves representing documents and queries as vectors in a multidimensional space. This makes it possible to compare the similarity between different texts using measures such as cosine similarity. This approach is relatively simple and fast, making it an ideal solution for quickly finding similar documents or text fragments.
 
-![Vector Search Image](/images/rag_vs_vector_search.png)
+![Vector Search Image](/images/rag_vs_vector_search.webp)
 Source: https://www.couchbase.com/blog/what-is-vector-search/
 
 ### Applications of a simpler approach

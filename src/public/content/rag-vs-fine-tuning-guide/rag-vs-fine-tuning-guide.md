@@ -3,7 +3,7 @@ title: "RAG or Fine-tuning? How to Choose the Best Approach for Your Product"
 date: "2025-11-24"
 slug: "rag-vs-fine-tuning-guide"
 excerpt: "Building LLM products involves a critical architectural choice: RAG or Fine-tuning? Learn the heuristics to save your budget and time-to-market."
-thumbnail: "/images/rag-vs-fine-tuning-guide-thumbnail.png"
+thumbnail: "/images/rag-vs-fine-tuning-guide-thumbnail.webp"
 categories: ["AI/LLM", "RAG", "Fine-tuning"]
 ---
 

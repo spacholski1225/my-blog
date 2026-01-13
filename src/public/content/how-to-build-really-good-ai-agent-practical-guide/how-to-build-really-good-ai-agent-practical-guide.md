@@ -3,7 +3,7 @@ title: "How to Build a Really Good AI Agent - Practical Guide"
 date: "2025-06-10"
 slug: "how-to-build-really-good-ai-agent-practical-guide"
 excerpt: "Building effective AI agents is more than just connecting an LLM to a few tools. Learn the art of balancing simplicity with functionality while maintaining reliability, security, and efficiency."
-thumbnail: "/images/how-to-build-really-good-ai-agent-practical-guide-thumbnail.jpg"
+thumbnail: "/images/how-to-build-really-good-ai-agent-practical-guide-thumbnail.webp"
 categories: ["AI/LLM"]
 ---
 

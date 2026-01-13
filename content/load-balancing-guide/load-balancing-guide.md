@@ -3,7 +3,7 @@ title: "Load Balancing: What It Is and Why You Need It"
 date: "2025-06-04"
 slug: "load-balancing-guide"
 excerpt: "Learn about load balancing techniques, methods, and tools for distributing network traffic across multiple servers to improve performance and reliability."
-thumbnail: "/images/load-balancing-guide-thumbnail.png"
+thumbnail: "/images/load-balancing-guide-thumbnail.webp"
 categories: ["DevOps", "Architecture"]
 ---
 

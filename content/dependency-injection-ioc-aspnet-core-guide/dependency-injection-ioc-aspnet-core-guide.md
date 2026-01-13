@@ -3,7 +3,7 @@ title: "Dependency Injection and IoC in ASP.NET Core: A Professional Guide"
 date: "2025-07-29"
 slug: "dependency-injection-ioc-aspnet-core-guide"
 excerpt: "Master Dependency Injection and Inversion of Control in ASP.NET Core. Learn best practices, lifecycle management, and common pitfalls to avoid for scalable .NET applications."
-thumbnail: "/images/dependency-injection-ioc-aspnet-core-guide-thumbnail.png"
+thumbnail: "/images/dependency-injection-ioc-aspnet-core-guide-thumbnail.webp"
 categories: [".NET", "Architecture"]
 ---
 

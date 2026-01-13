@@ -3,7 +3,7 @@ title: "How to Use Marten in Multitenant Architecture? A Guide for .NET Develope
 date: "2025-07-09"
 slug: "marten-multitenancy-guide-dotnet-developers"
 excerpt: "Learn how to implement multitenancy in .NET applications using Marten - from row-level isolation to separate databases per tenant"
-thumbnail: "/images/marten-multitenancy-guide-dotnet-developers-thumbnail.png"
+thumbnail: "/images/marten-multitenancy-guide-dotnet-developers-thumbnail.webp"
 categories: ["Architecture", ".NET", "Programming"]
 ---
 

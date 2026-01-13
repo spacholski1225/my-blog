@@ -4,7 +4,7 @@ title: "Design Patterns for Multi-Tenant Applications in DDD Architecture"
 date: "2025-10-06"
 slug: "design-patterns-multi-tenant-ddd"
 excerpt: "Learn how to combine Domain-Driven Design with classic patterns like Repository, Strategy, and Decorator to build scalable multi-tenant applications with proper data isolation and clean architecture."
-thumbnail: "/images/design-patterns-multi-tenant-ddd-thumbnail.png"
+thumbnail: "/images/design-patterns-multi-tenant-ddd-thumbnail.webp"
 categories: ["Architecture", "Design Patterns"]
 -----------------------------------------------------------------------
 

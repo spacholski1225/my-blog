@@ -3,7 +3,7 @@ title: "Design Patterns Overview: Singleton, Factoryand Observer"
 date: "2021-07-07"
 slug: "design-patterns-overview"
 excerpt: "An introduction to design patterns in software engineering with a focus on Singleton, Factoryand Observer patterns."
-thumbnail: "/images/design_patterns.png"
+thumbnail: "/images/design_patterns.webp"
 categories: ["Architecture"]
 ---
 

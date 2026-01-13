@@ -3,7 +3,7 @@ title: "Analyzing System Prompts: Insights from Claude by Anthropic"
 date: "2025-05-14"
 slug: "analyzing-system-prompts-claude"
 excerpt: "An analysis of the system prompt of a model like Anthropic's Claude provides valuable insights into crafting effective instructions for language models."
-thumbnail: "/images/analyzing-system-prompts-claude-thumbnail.jpg"
+thumbnail: "/images/analyzing-system-prompts-claude-thumbnail.webp"
 categories: ["AI/LLM"]
 ---
 

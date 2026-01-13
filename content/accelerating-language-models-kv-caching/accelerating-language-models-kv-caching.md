@@ -3,7 +3,7 @@ title: "Accelerating Language Models with KV Caching"
 date: "2025-12-15"
 slug: "accelerating-language-models-kv-caching"
 excerpt: "A deep dive into one of the most important optimizations in the LLM world: KV Caching. Learn how it works, why it matters, and what trade-offs it involves."
-thumbnail: "/images/accelerating-language-models-kv-caching-thumbnail.png"
+thumbnail: "/images/accelerating-language-models-kv-caching-thumbnail.webp"
 categories: ["MLOps", "AI/LLM"]
 ---
 

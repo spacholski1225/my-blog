@@ -3,7 +3,7 @@ title: "Circuit Breaker for LLM with Retry and Backoff – Anthropic API Example
 date: "2025-07-15"
 slug: "circuit-breaker-llm-retry-backoff-anthropic-api-typescript"
 excerpt: "Learn how to implement the Circuit Breaker pattern with retry and backoff strategies for Large Language Model APIs like Anthropic's Claude to handle rate limits and build resilient applications."
-thumbnail: "/images/circuit-breaker-llm-retry-backoff-anthropic-api-typescript-thumbnail.png"
+thumbnail: "/images/circuit-breaker-llm-retry-backoff-anthropic-api-typescript-thumbnail.webp"
 categories: ["Architecture", "AI/LLM", "TypeScript"]
 ---
 
