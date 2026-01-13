@@ -139,7 +139,7 @@ function isImageFile(filePath) {
 async function main() {
   console.log('Cleaning public content directories...');
   await cleanDirectory(publicContentDir);
-  await cleanDirectory(publicImagesDir);
+
     
   console.log(`Processing content from ${contentDir}`);
   await ensureDirectoryExists(publicContentDir);

@@ -3,7 +3,7 @@ title: "Introduction to LLMs: What Are They and How Do They Work?"
 date: "2024-11-20"
 slug: "intro-to-llms"
 excerpt: "A beginner-friendly explanation of Large Language Models (LLMs), how they workand how they are used."
-thumbnail: "/images/intro-to-llms-thumbnail.jpg"
+thumbnail: "/images/intro-to-llms-thumbnail.webp"
 categories: ["AI/LLM"]
 ---
 
@@ -15,13 +15,13 @@ Large Language Models (LLMs) are AI algorithms trained on massive amounts of tex
 
 LLMs are based on neural network architectures, typically transformers. These networks consist of three main components: an input layer, multiple hidden layersand an output layer. This layered structure allows LLMs to process information in a non-deterministic way — meaning they can generate different responses to the same prompt.
 
-![Neuron Network Image](/images/neuron-network.png)
+![Neuron Network Image](/images/neuron-network.webp)
 
 The input layer receives data like text or images. Hidden layers contain neurons that extract features and process the data. The more layers and neurons, the more complex the patterns the model can understand. Finally, the output layer generates a response.
 
 ### Example: Image Recognition with LLMs
 
-![Dogs Image](/images/dogs.png)
+![Dogs Image](/images/dogs.webp)
 
 Imagine an LLM designed to recognize sleeping dogs in images. The input layer processes the image, hidden layers analyze shapes, texturesand patternsand the output layer determines the presence of a dog — with a probability score. The process isn't deterministic: the same input might produce slightly different results each time.
 
@@ -29,12 +29,12 @@ Imagine an LLM designed to recognize sleeping dogs in images. The input layer pr
 
 In the context of LLMs, a *token* is a unit of text the model processes. Depending on the model's tokenizer, a token might be a whole word, a single letter, punctuation, or a word fragment.
 
-![Tokens1 Image](/images/tokens1.png)
+![Tokens1 Image](/images/tokens1.webp)
 
 Tools like Tiktokenizer can show how a piece of text is broken into tokens. Each token has a numeric ID that the model uses internally.
 
 
-![Tokens2 Image](/images/tokens2.png)
+![Tokens2 Image](/images/tokens2.webp)
 
 Token count impacts both performance and cost. Longer inputs require more computational power and may exceed the model’s token limit. Efficient token usage is essential for optimal performance.
 
@@ -48,7 +48,7 @@ The model relies on the entire conversation context. It considers not only the u
 
 To tailor a model’s behavior or expand its knowledge, two popular techniques are used: **Fine-Tuning** and **RAG (Retrieval Augmented Generation)**.
 
-![FineTuning vs RAG Image](/images/openai.png)
+![FineTuning vs RAG Image](/images/openai.webp)
 
 ### Fine-Tuning
 

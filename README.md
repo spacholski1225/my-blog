@@ -125,7 +125,7 @@ title: "Your Post Title"
 date: "YYYY-MM-DD"
 slug: "your-post-slug"
 excerpt: "A brief summary of your post (appears in listings)"
-thumbnail: "/images/default-thumbnail.png"
+thumbnail: "/images/default-thumbnail.webp"
 categories: ["Category1", "Category2"]
 ---
 
