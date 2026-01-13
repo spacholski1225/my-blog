@@ -3,7 +3,7 @@ title: "Is Claude Code Hallucinating Again? Learn the AI Agents Architecture Tha
 date: "2026-01-13"
 slug: "ai-agents-architecture-cure-terminal-hallucinations"
 excerpt: "Hallucinations aren't a bug in LLM systems—they're a feature. The solution isn't waiting for the next language model, but changing your workflow. Here's how to use the MCP standard, CLAUDE.md files, and Multi-Agent strategy to transform guessing into solid engineering."
-thumbnail: "/images/default-thumbnail.png"
+thumbnail: "/images/ai-agents-architecture-cure-terminal-hallucinations-thumbnail.png"
 categories: ["AI/LLM", "Claude Code"]
 ---
 
