@@ -4,7 +4,7 @@ date: "2026-01-26"
 slug: "claude-code-superpowers-framework"
 excerpt: "Discover the Superpowers framework that transforms Claude Code from a helpful assistant into an autonomous senior engineer following TDD, code reviews, and structured development processes."
 thumbnail: "/images/claude-code-superpowers-framework-thumbnail.webp"
-categories: ["Claude Code", "AI/LLM"]
+categories: ["AI/LLM","Claude Code"]
 ---
 
 # Gave Claude Code Superpowers: How I Transformed AI into a Seasoned Senior Engineer
