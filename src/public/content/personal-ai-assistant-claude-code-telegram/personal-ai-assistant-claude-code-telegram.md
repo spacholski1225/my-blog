@@ -3,7 +3,7 @@ title: "Building a Personal AI Assistant with Claude Code and Telegram"
 date: "2026-02-19"
 slug: "personal-ai-assistant-claude-code-telegram"
 excerpt: "How I turned Claude Code — a developer tool, not an automation platform — into a personal AI assistant controlled from any device via Telegram, hosted on a Raspberry Pi."
-thumbnail: "/images/default-thumbnail.png"
+thumbnail: "/images/personal-ai-assistant-claude-code-telegram-thumbnail.webp"
 categories: ["AI/LLM", "Automation", "Python", "Claude Code"]
 ---
 
