@@ -3,7 +3,7 @@ title: "The Hidden Trap in Multimodal AI Agents: How Attachments Break Tool Call
 date: "2026-04-21"
 slug: "multimodal-agent-attachment-trap"
 excerpt: "Why AI agents can't pass image URLs or Base64 data between tools — and how a simple <media> tag in the user message fixes it."
-thumbnail: "/images/default-thumbnail.webp"
+thumbnail: "/images/multimodal-agent-attachment-trap-thumbnail.webp"
 categories: ["AI/LLM", "Architecture", "AI Agents"]
 ---
 
