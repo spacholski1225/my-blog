@@ -4,7 +4,7 @@ date: "2026-03-26"
 slug: "beyond-chat-behavioral-frameworks-modern-ai-systems"
 excerpt: "Prompt engineering isn't dying — it's evolving into system design. Learn how modern AI agent developers build behavioral frameworks that make LLMs predictable and safe."
 thumbnail: "/images/beyond-chat-behavioral-frameworks-modern-ai-systems-thumbnail.webp"
-categories: ["AI", "Prompt Engineering", "AI Agents"]
+categories: ["AI/LLM", "Prompt Engineering", "AI Agents"]
 ---
 
 # Beyond Chat: Designing Behavioral Frameworks for Modern AI Systems
