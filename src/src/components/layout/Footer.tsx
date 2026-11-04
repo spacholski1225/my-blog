@@ -35,7 +35,7 @@ const Footer = () => {
               opacity: 0.7,
               marginBottom: '1rem'
             }}>
-              My personal blog and portfolio focused on modern software development, AI applications and backend architecture.
+              Blog by Szymon Pacholski, AI Engineer: AI SDLC from practice. Domain context, specs, tests and review when working with AI agents.
             </p>
           </div>
           

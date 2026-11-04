@@ -16,11 +16,10 @@ const AboutMe = () => {
             />
           </div>
           <div className="bio-container">
-            <h2>About Me</h2>
+            <h2>I show how I work with AI agents on real software projects.</h2>
             <p>
-              Welcome to my digital corner!
-              I&apos;m Szymon, a developer exploring the realms of software engineering and artificial intelligence.
-              Dive into my blog and projects to see what I&apos;m up to.
+              I&apos;m Szymon, an AI Engineer. I write about AI SDLC from practice: domain context, specs, tests and review when working with AI agents.
+              What works, what doesn&apos;t, and what I don&apos;t know yet.
             </p>
           </div>
         </div>

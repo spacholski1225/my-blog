@@ -7,13 +7,13 @@ export default function About() {
       
       <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 mb-8">
         <p className="text-lg mb-4">
-          Hello! I&apos;m a passionate developer with experience in web development, particularly using React, Next.jsand TypeScript.
+          I&apos;m Szymon, an AI Engineer. I show how I work with AI agents on real software projects, from domain context and specs to tests and review (AI SDLC): what works, what doesn&apos;t, and what I don&apos;t know yet.
         </p>
         <p className="text-lg mb-4">
-          I enjoy building modern, responsive web applications and exploring new technologies. When I&apos;m not coding, you can find me hiking, reading, or experimenting with new recipes.
+          I&apos;ve been programming since 2021, across frontend, backend and infrastructure. At Auctane I built the first version of an LLM pull request reviewer used by around 40 engineers, and I ran workshops on LLMs and coding agents for 40–50 colleagues. Today I work as an AI Engineer at Addepto.
         </p>
         <p className="text-lg mb-4">
-          Feel free to connect with me on social media or check out my projects on GitHub!
+          Posts here are in English. My videos and newsletter are in Polish: <a href="https://www.youtube.com/@spacholski" target="_blank" rel="noopener noreferrer">YouTube @spacholski</a>, <a href="https://szymonpacholski.pl" target="_blank" rel="noopener noreferrer">szymonpacholski.pl</a>.
         </p>
       </div>
       
